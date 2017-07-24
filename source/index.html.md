@@ -19,49 +19,14 @@ search: true
 
 # Introduction
 
-Welcome to the UnleashAerials API! You can use our API to access Unleash API endpoints, which can get information on RESTful resources and S3 media data.
+Welcome to the Unleash live API! You can use our API to access Unleash API endpoints, which can get information on RESTful resources and S3 media data.
 
 # Authentication
 
-> To authorize, use this code:
+All requests need to be signed using SIGv4.  [Resource](http://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html)
+Requests made from client code, should be signed using temporary credentials retrieved in the event of user authentication.
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-```
-
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-```
-
-> Make sure to replace `meowmeowmeow` with your API key.
-
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
-
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-# Kittens
+# Company
 
 ## Get All Kittens
 
