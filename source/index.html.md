@@ -3,12 +3,9 @@ title: Unleash API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell
-  - python
-  - javascript
-
+  
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
+  - <a href='https://github.com/unleashapi'>GitHub unleash repositories</a>
 
 includes:
   - errors
@@ -26,7 +23,8 @@ All requests need to be signed using SIGv4.  [Resource](http://docs.aws.amazon.c
 
 Requests made from client code, should be signed using temporary credentials retrieved in the event of user authentication.
 
-# API endpoints
+# Staging environments
+
 The following staging environments are used:
 
 Environment | Description | URL
@@ -35,169 +33,132 @@ dev | development, low data quality | [https://j38cpd946i.execute-api.ap-southea
 test |  tests in continous integration | [https://ynasxkqkug.execute-api.ap-southeast-2.amazonaws.com/test](https://ynasxkqkug.execute-api.ap-southeast-2.amazonaws.com/test)
 prod |  production  | [https://wdycfuekci.execute-api.ap-southeast-2.amazonaws.com/prod](https://wdycfuekci.execute-api.ap-southeast-2.amazonaws.com/prod)
 
-# Company
-
-## Get a Company
+# API Reference
 
 
-```python
-import kittn
+## Company
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
+Represents customer company.
 
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
+### Create a company
 
-```javascript
-const kittn = require('kittn');
+Creates new company item
 
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
-```
+#### API Endpoint
 
-> The above command returns JSON structured like this:
+`POST /company`
 
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
+``` 
+POST /company 
+
+{
+  "method": "POST",
+  "headers": {
+    "host": "https://9hrof0g1r6.execute-api.ap-southeast-2.amazonaws.com/dev/company",
+    "user-agent": "curl/7.49.1",
+    "accept": "*/*"
   },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
-```
-
-This endpoint retrieves all kittens.
-
-### HTTP Request
-
-`GET http://example.com/api/kittens`
-
-### Query Parameters
-
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-
-## Get a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+  "body": "{\"owner\": \"cebb901b-52a7-4f1a-b460-c6967a555cfe\",\"name\": \"sadfasfdsaf3\",\"address\": \"Queenscliff Hut 222\",\"logo\": \"http://unleash.com/logo.png\",\"brandColor\": \"blue\",\"website\":\"http://google.com\",\"industry\" :\"chemical\"}",
+  "path": {},
+  "query": {}
 }
+
+
 ```
 
-This endpoint retrieves a specific kitten.
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
 
-### HTTP Request
+#### Parameters
 
-`GET http://example.com/kittens/<ID>`
+Name | Type | Contraints | Description
+--------|-------|--------- | ------
+owner | string | required, uuid format| The foreign key id of company owner
+name | string | required, max length 100 | Name of the company
+address | string | required, max length 200 | Company address
+logo | string | required, url format| Company logo url 
+brandColor | string | required, max length 100 | Company color, hex or descriptive
+website | string | optional  | URL to company website
+industry | string | required, max length 50| Business industry
 
-### URL Parameters
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
+``` 
 
-## Delete a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -X DELETE
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
-```
-
-> The above command returns JSON structured like this:
-
-```json
 {
-  "id": 2,
-  "deleted" : ":("
+  "method": "POST",
+  "headers": {
+    "host": "https://9hrof0g1r6.execute-api.ap-southeast-2.amazonaws.com/dev/company",
+    "user-agent": "curl/7.49.1",
+    "accept": "*/*"
+  },
+  "body": "{\"owner\": \"cebb901b-52a7-4f1a-b460-c6967a555cfe\",\"name\": \"sadfasfdsaf3\",\"address\": \"Queenscliff Hut 222\",\"logo\": \"http://unleash.com/logo.png\",\"brandColor\": \"blue\",\"website\":\"http://google.com\",\"industry\" :\"chemical\"}",
+  "path": {},
+  "query": {}
 }
+
+
 ```
 
-This endpoint retrieves a specific kitten.
+### Get a Company
 
-### HTTP Request
+Retrieve company by ID
 
-`DELETE http://example.com/kittens/<ID>`
+#### API Endpoint
 
-### URL Parameters
+ `GET /company/{id}`
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to delete
+```
+ GET /company/{id}
+```
+
+
+#### Parameters
+
+Name | Type | Contraints | Description
+--------|-------|--------- | ------
+id | string | required, uuid format| id of the company
+
+
+
+### List companies
+
+```
+ GET /company
+```
+List all the companies
+#### API Endpoint
+
+ `GET /company`
+
+### Update a Company
+
+ 
+```
+ PUT /company/{id}
+```
+Replace a given attribute with new value
+
+
+#### API Endpoint
+
+ ` PUT /company/{id}`
+ 
+#### Parameters
+Name | Type | Contraints | Description
+--------|-------|--------- | ------
+attributeName | string | required| the name of the attribute
+attributeValue | string | required| the value to assign
+
+
+### Delete a Company
+
+Deletes the company by id
+
+#### API Endpoint
+
+ ` DELETE /company/{id}`
+ 
+```
+ DELETE /company/{id}
+```
+
 
