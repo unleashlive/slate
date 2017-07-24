@@ -26,16 +26,16 @@ Welcome to the Unleash live API! You can use our API to access Unleash API endpo
 All requests need to be signed using SIGv4.  [Resource](http://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html)
 Requests made from client code, should be signed using temporary credentials retrieved in the event of user authentication.
 
+# API endpoints
+There are 3 staging environments:
+ - https://j38cpd946i.execute-api.ap-southeast-2.amazonaws.com/dev - used for development, low data quality
+ - https://ynasxkqkug.execute-api.ap-southeast-2.amazonaws.com/test - used for tests in continous integration
+ - https://wdycfuekci.execute-api.ap-southeast-2.amazonaws.com/prod - used for production 
+
 # Company
 
-## Get All Kittens
+## Get a Company
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
 
 ```python
 import kittn
