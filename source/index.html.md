@@ -5,7 +5,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - shell
   
 toc_footers:
-  - <a href='https://github.com/unleashapi'>GitHub unleash repositories</a>
+  - <a href='https://github.com/unleashapi'>Unleash repositories</a>
 
 includes:
   - company
@@ -27,6 +27,17 @@ Welcome to the Unleash live API! You can use our API to access Unleash API endpo
 All requests need to be signed using SIGv4.  [Resource](http://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html)
 
 Requests made from client code, should be signed using temporary credentials retrieved in the event of user authentication.
+User authentication is not part of the Unleash API but it's described below as a reference.
+
+## User registration
+
+### Email signup
+
+On email and password sign up, user is added to Unleash User Pool. 
+Reference [http://docs.aws.amazon.com/cognito/latest/developerguide/tutorial-integrating-user-pools-javascript.html#tutorial-integrating-user-pools-sign-up-users-javascript](http://docs.aws.amazon.com/cognito/latest/developerguide/tutorial-integrating-user-pools-javascript.html#tutorial-integrating-user-pools-sign-up-users-javascript)
+
+### Forgot password
+[http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ForgotPassword.html](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ForgotPassword.html)
 
 # Staging environments
 
