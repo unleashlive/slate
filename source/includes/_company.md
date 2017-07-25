@@ -128,3 +128,48 @@ Deletes the company by id
  DELETE /company/{id}
 ```
 
+### Add company user 
+
+Assign a user to a company
+
+#### API Endpoint
+
+`POST /company/{companyId}/user/{userId}`
+
+
+### List company users
+
+Retrieve user of particular company by unique ID.
+
+#### API Endpoint
+
+ `GET /company/{companyId}/user`
+
+### Remove user from a company
+#### API Endpoint
+
+` DELETE /company/{companyId}/user/{userId} `
+
+
+### Add company device 
+
+Assign a device to a company
+
+#### API Endpoint
+
+`POST /company/{companyId}/device/{deviceId}`
+
+
+### List company devices
+
+Retrieve device of particular company by unique ID.
+
+#### API Endpoint
+
+ `GET /company/{companyId}/device`
+
+### Remove device from a company
+
+#### API Endpoint
+
+` DELETE /company/{companyId}/device/{deviceId} `
