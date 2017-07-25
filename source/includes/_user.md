@@ -1,16 +1,13 @@
-
 ## User
-Represents customer user.
+Represents the Unleash User.
 
 ### Create a user
 
-Creates new user item
+Create new representation of Unleash User. This is post user registration and used only for user data management (not authentication)
 
 #### API Endpoint
 
 `POST /user`
-
-
 
 #### Parameters
 

@@ -48,3 +48,26 @@ filename | string | required| the name which will be assigned in s3 storage
 After you obtain the presigned url, you need to perform browser based upload to S3. More details in S3 API documentation: http://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-post-example.html
 </aside>
 
+### List session media files
+
+Retrieve all images and videos recorded on a given device in particular session.
+#### API Endpoint
+
+ `GET /library/device/{deviceId}/session/{sessionId}`
+ 
+### List device media files
+
+Retrieve all images and videos recorded on a given device in any session.
+#### API Endpoint
+
+ `GET /library/device/{deviceId}/session}`
+ 
+### List device sessions
+
+Retrieve list of sessions recorded using particular device.
+#### API Endpoint
+
+ `GET /library/session/device/{deviceId}/`
+
+
+
