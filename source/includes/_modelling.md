@@ -1,10 +1,20 @@
 ## Unleash Modelling 
 
 ### Upload the files
+Call API for presigned post request and then upload it manually using PUT request to S3.
 
-TODO: Java endpoints documentation 
+### API endpoint
+`POST https://94hx3w6zfh.execute-api.ap-southeast-2.amazonaws.com/unleash/upload-link`
 
-### Start modelling (used internally)
+#### Parameters
+
+Name | Type | Contraints | Description
+--------|-------|--------- | ------
+`deviceId` | string | required| device id
+`sessionId` | number | required | session id 
+`fileName` | string | required| file name 
+
+### Start modelling
 
 In order to submit processing job, you need to call this endpoint after the files are uploaded to S3.
 This starts the EC2 container with ODM docker image which will process the images and output results to S3.
@@ -15,6 +25,24 @@ All files should be synced to S3 beforehand executing this endpoint - see **Uplo
 <aside class="notice">
 Please note the best results can be achieved by using high resolution images 
 </aside> 
+
+#### API Endpoint
+
+`POST https://94hx3w6zfh.execute-api.ap-southeast-2.amazonaws.com/unleash/stitch`
+ 
+```
+POST https://94hx3w6zfh.execute-api.ap-southeast-2.amazonaws.com/unleash/stitch
+```
+
+#### Parameters
+
+Name | Type | Contraints | Description
+--------|-------|--------- | ------
+`items` | array | required| items to upload
+`deviceId` | string | required| device id
+
+
+## Start task 
 
 #### API Endpoint
 
@@ -37,7 +65,7 @@ inputSize | number | optional | the approximated size of the files to be process
 The input size is not currently in use, although its planned in order to implement the dynamic container resource usage utility. The amount of container resources highly depend on the number of files and their size.
 </aside>
 
-### Query modelling status (used internally)
+### Query modelling status 
 
 The asynchronous nature of processing data in the containers, implies there is an effort to track progress of the processing status. The monitoring of Unleash modelling jobs is achieved by polling for the container execution status. 
 That might be used to update the UI once the modelling is finished or is interrupted from various errors. 

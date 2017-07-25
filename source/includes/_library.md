@@ -1,5 +1,6 @@
 ## Library
 The API represents methods to integrate user interface with Unleash S3 storage.  
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/41b960820a1b05ba4e8a)
 
 ```
 Sample request
@@ -42,7 +43,6 @@ deviceId | string | required| the device id, which was used to capture the file
 sessionId | string | required| the session id the file belongs to
 filename | string | required| the name which will be assigned in s3 storage
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/41b960820a1b05ba4e8a)
 
 <aside class="notice">
 After you obtain the presigned url, you need to perform browser based upload to S3. More details in S3 API documentation: http://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-post-example.html
