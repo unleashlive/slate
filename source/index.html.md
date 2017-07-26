@@ -1,11 +1,18 @@
 ---
-title: Unleash API Reference
+title: Unleash live API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell
   
 toc_footers:
-  - <a href='https://github.com/unleashapi'>Unleash repositories</a>
+  - <a href='https://github.com/unleashlive'>Unleash repositories</a>
+  - <a href='https://www.unleashlive.com' target="_blank">Request API key</a>
+  - <a href='https://www.unleashlive.com' target="_blank">Find answers in our FAQ</a>
+  - <a href='https://stackoverflow.com' target="_blank">Ask on Stack Overflow</a>
+  - <a href='https://au.linkedin.com/company/unleash-live' target="_blank">Follow us on LinkedIn</a>
+  - <a href='https://www.unleashlive.com'>Sign in to your account</a>
+  - <a href='https://au.linkedin.com/company/unleash-live' target="_blank">Join the team!</a>
+  - (c) Copyright Unleash live Pty Ptd.
 
 includes:
   - company
@@ -20,7 +27,18 @@ search: true
 
 # Introduction
 
-Welcome to the Unleash live API! You can use our API to access Unleash API endpoints, which can get information on RESTful resources and S3 media data.
+Welcome to the Unleash live API!
+
+Unleash live APIs connect you to all the data you need to build an innovative website or app.
+
+You can use our API to access Unleash API endpoints, which can get information on RESTful resources and media data.
+Build tools that solve real business problems around the world.
+
+<aside class="success">
+In order to use our APIs you need to contact us to request an API key via <a href='https://www.unleashlive.com' target="_blank">this form.</a>
+
+If you need more help you can find more information and answers to questions in our FAQ which we continuously update.
+</aside>
 
 # Authentication
 
