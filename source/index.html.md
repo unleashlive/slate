@@ -19,6 +19,7 @@ includes:
   - user
   - device
   - library
+  - plans
   - modelling
   - errors
 
