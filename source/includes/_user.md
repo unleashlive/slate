@@ -73,3 +73,22 @@ attributeName | string | required| the name of the attribute
 attributeValue | string | required| the value to assign
 
 
+### Upload company logo
+
+To upload a company logo, you need to call API to request a presigned URL and then upload it directly to s3 using the given url.
+ 
+```
+ POST /user/uploadLogo
+```
+
+
+#### API Endpoint
+
+ ` POST /user/uploadLogo`
+ 
+#### Parameters
+Name | Type | Contraints | Description
+--------|-------|--------- | ------
+companyId | string | required| id of the company
+filename | string | required| logo file name
+
