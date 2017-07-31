@@ -8,7 +8,7 @@ Call API for presigned post request and then upload it manually using PUT reques
 
 #### Parameters
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 `deviceId` | string | required| device id
 `sessionId` | number | required | session id 
@@ -36,7 +36,7 @@ POST https://94hx3w6zfh.execute-api.ap-southeast-2.amazonaws.com/unleash/stitch
 
 #### Parameters
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 `items` | array | required| items to upload
 `deviceId` | string | required| device id
@@ -54,7 +54,7 @@ POST /odm/process
 
 #### Parameters
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 identityId | string | required| Cognito identity id of the user 
 deviceId | string | required| device id
@@ -75,7 +75,7 @@ That might be used to update the UI once the modelling is finished or is interru
 
 ### Query parameters 
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 task | string | required| the base64 encoded task ARN to query
 

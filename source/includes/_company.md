@@ -33,7 +33,7 @@ POST /company
 
 #### Parameters
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 id | string, uuid | (auto generated) |  database hash id
 owner | string | required, uuid format| The foreign key id of company owner
@@ -80,7 +80,7 @@ Retrieve company by ID
 
 #### Parameters
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 id | string | required, uuid format| id of the company
 
@@ -110,7 +110,7 @@ Replace a given attribute with new value
  ` PUT /company/{id}`
  
 #### Parameters
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 attributeName | string | required| the name of the attribute
 attributeValue | string | required| the value to assign

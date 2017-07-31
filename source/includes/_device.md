@@ -14,7 +14,7 @@ Creates new device item
 
 #### Parameters
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 id | string, uuid | (auto generated) |  database hash id
 owner | string | required, uuid format| The foreign key id of device owner
@@ -41,7 +41,7 @@ Retrieve device by ID
 
 #### Parameters
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 id | string | required, uuid format| id of the device
 
@@ -71,7 +71,7 @@ Replace a given attribute with new value
  ` PUT /device/{id}`
  
 #### Parameters
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 attributeName | string | required| the name of the attribute
 attributeValue | string | required| the value to assign
@@ -91,7 +91,7 @@ Deletes the device by id
 
 #### Parameters
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 id | string | required, uuid format| id of the device
 

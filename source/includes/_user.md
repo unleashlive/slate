@@ -11,7 +11,7 @@ Create new representation of Unleash User. This is post user registration and us
 
 #### Parameters
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 id | string, uuid | (auto generated) |  database hash id
 username | string | required | Username alias
@@ -37,7 +37,7 @@ Retrieve user by ID
 
 #### Parameters
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 id | string | required, uuid format| id of the user
 
@@ -67,7 +67,7 @@ Replace a given attribute with new value
  ` PUT /user/{id}`
  
 #### Parameters
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 attributeName | string | required| the name of the attribute
 attributeValue | string | required| the value to assign
@@ -91,7 +91,7 @@ Company logos are to the following path:
  ` POST /user/uploadLogo`
  
 #### Parameters
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 companyId | string | required| id of the company
 filename | string | required| logo file name

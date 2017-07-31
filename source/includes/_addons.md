@@ -1,14 +1,14 @@
-## Products
+## Addons
 
-Represents Unleash hardware products
+Represents Unleash hardware addons
 
-### Create a product
+### Create a addon
 
-Creates new product item
+Creates new addon item
 
 #### API Endpoint
 
-`POST /product`
+`POST /addon`
 
 
 #### Parameters
@@ -16,24 +16,24 @@ Creates new product item
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
 `id`  | string, uuid | (auto generated) |  database hash id
-`price`  | string | required | product price per month
+`name` | string | required | addon name
+`price`  | string | required | addon price per month
 `currency` | string | required | price currency in standard ISO 4217 - e.g. AUD
-`name` | string | required | product name
-`description` | string | required | product description, features available
+`description` | string | required | addon description, features available
 `createdAt`  | timestamp | (auto generated) | item created timestamp
 `updatedAt`  | timestamp | (auto generated) | item updated timestamp
 
 
-### Get a product
+### Get a addon
 
-Retrieve product by ID
+Retrieve addon by ID
 
 #### API Endpoint
 
- `GET /product/{id}`
+ `GET /addon/{id}`
 
 ```
- GET /product/{id}
+ GET /addon/{id}
 ```
 
 
@@ -41,32 +41,32 @@ Retrieve product by ID
 
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-id | string | required, uuid format| id of the product
+id | string | required, uuid format| id of the addon
 
 
 
-### List products
+### List addons
 
 ```
- GET /product
+ GET /addon
 ```
-List all the products
+List all the addons
 #### API Endpoint
 
- `GET /product`
+ `GET /addon`
 
-### Update a product
+### Update a addon
 
  
 ```
- PUT /product/{id}
+ PUT /addon/{id}
 ```
 Replace a given attribute with new value
 
 
 #### API Endpoint
 
- ` PUT /product/{id}`
+ ` PUT /addon/{id}`
  
 #### Parameters
 Name | Type | Constraints | Description
@@ -75,22 +75,22 @@ attributeName | string | required| the name of the attribute
 attributeValue | string | required| the value to assign
 
 
-### Delete a product
+### Delete an addon
 
-Deletes the product by id
+Deletes the addon by id
 
 #### API Endpoint
 
- ` DELETE /product/{id}`
+ ` DELETE /addon/{id}`
  
 ```
- DELETE /product/{id}
+ DELETE /addon/{id}
 ```
 
 #### Parameters
 
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-id | string | required, uuid format| id of the product
+id | string | required, uuid format| id of the addon
 
 

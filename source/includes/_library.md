@@ -37,7 +37,7 @@ In order to upload file to Unleash S3, call this endpoint to receive presigned P
  ` POST /library/upload`
 
 #### Parameters
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 deviceId | string | required| the device id, which was used to capture the file
 sessionId | string | required| the session id the file belongs to

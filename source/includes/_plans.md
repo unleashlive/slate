@@ -21,10 +21,10 @@ Creates new plan item
 
 #### Parameters
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 `id`  | string, uuid | (auto generated) |  database hash id
-`name` | string | required | plan name for presenting
+`name` | string | required | plan name 
 `description` | string | required | plan description, features available
 `price`  | number | required | plan price per month (x*100)
 `currency` | string | optional | price currency in standard ISO 4217. Default: AUD
@@ -50,7 +50,7 @@ Retrieve plan by ID
 
 #### Parameters
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 id | string | required, uuid format| id of the plan
 
@@ -80,7 +80,7 @@ Replace a given attribute with new value
  ` PUT /plan/{id}`
  
 #### Parameters
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 attributeName | string | required| the name of the attribute
 attributeValue | string | required| the value to assign
@@ -100,7 +100,7 @@ Deletes the plan by id
 
 #### Parameters
 
-Name | Type | Contraints | Description
+Name | Type | Constraints | Description
 --------|-------|--------- | ------
 id | string | required, uuid format| id of the plan
 
