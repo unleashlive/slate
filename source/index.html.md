@@ -20,6 +20,7 @@ includes:
   - device
   - library
   - plans
+  - products
   - modelling
   - errors
 
