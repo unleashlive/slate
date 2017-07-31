@@ -81,6 +81,10 @@ To upload a company logo, you need to call API to request a presigned URL and th
  POST /user/uploadLogo
 ```
 
+#### Logo stored location
+
+Company logos are to the following path:
+`/pylot/${identityId}/${companyId}/${filename}`
 
 #### API Endpoint
 
