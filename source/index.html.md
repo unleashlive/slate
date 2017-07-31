@@ -67,7 +67,7 @@ Environment | Description | URL
 -------------- | -------------- | --------------
 dev | development, low data quality | [https://8xbk6rnolh.execute-api.ap-southeast-2.amazonaws.com/dev](https://j38cpd946i.execute-api.ap-southeast-2.amazonaws.com/dev)
 test |  tests in continous integration | [https://ncwcpjourd.execute-api.ap-southeast-2.amazonaws.com/test](https://ynasxkqkug.execute-api.ap-southeast-2.amazonaws.com/test)
-prod |  production  | [https://wdycfuekci.execute-api.ap-southeast-2.amazonaws.com/prod](https://wdycfuekci.execute-api.ap-southeast-2.amazonaws.com/prod)
+prod |  production  | [https://v8ic8csycc.execute-api.ap-southeast-2.amazonaws.com/prod](https://wdycfuekci.execute-api.ap-southeast-2.amazonaws.com/prod)
 
 # API Reference
 
