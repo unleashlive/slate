@@ -1,6 +1,5 @@
 ## Library
 The API represents methods to integrate user interface with Unleash S3 storage.  
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/41b960820a1b05ba4e8a)
 
 ```
 Sample request
