@@ -3,7 +3,7 @@ Represents the Unleash User.
 
 ### Create a user
 
-Create new representation of Unleash User. This is post user registration and used only for user data management (not authentication)
+Create new representation of Unleash User. Call this only after first user login. Request need to be signed by credentials obtained from identity pool (Cognito user credentials) 
 
 #### API Endpoint
 
@@ -17,7 +17,7 @@ id | string, uuid | (auto generated) |  database hash id
 username | string | required | Username alias
 fullName | string | required, max length 100 | Name of the user
 email | string | required, email format | User email
-password | string | required | User password (see: password policy rules in Authentication section)
+identityId | string | required | User's identity id 
 createdAt | timestamp | (auto generated) | item created timestamp
 updatedAt | timestamp | (auto generated) | item updated timestamp
 
