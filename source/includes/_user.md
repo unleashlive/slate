@@ -13,11 +13,10 @@ Create new representation of Unleash User. Call this only after first user login
 
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-id | string, uuid | (auto generated) |  database hash id
+id | string, uuid | required | User's identity id 
 username | string | required | Username alias
 fullName | string | required, max length 100 | Name of the user
 email | string | required, email format | User email
-identityId | string | required | User's identity id 
 createdAt | timestamp | (auto generated) | item created timestamp
 updatedAt | timestamp | (auto generated) | item updated timestamp
 
