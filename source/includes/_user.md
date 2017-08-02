@@ -3,7 +3,11 @@ Represents the Unleash User.
 
 ### Create a user
 
-Create new representation of Unleash User. Call this only after first user login. Request need to be signed by credentials obtained from identity pool (Cognito user credentials) 
+Create new representation of Unleash User. 
+
+<aside class="notice">
+Call this only after first user login. Request need to be signed using credentials obtained from identity pool (Cognito user credentials)
+</aside>
 
 #### API Endpoint
 
