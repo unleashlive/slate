@@ -51,7 +51,7 @@ id | string | required, uuid format| id of the user
 ```
  GET /user
 ```
-List all the devices
+List all the users
 #### API Endpoint
 
  `GET /user`
