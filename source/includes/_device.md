@@ -17,7 +17,7 @@ Creates new device item
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
 id | string, uuid | (auto generated) |  database hash id
-owner | string | required, uuid format| The foreign key id of device owner
+owner | string | required| The foreign key id of device owner
 name | string | required, max length 100 | Name of the device
 hwstats | string | required, max length 500 | Hardware stats
 usage | string | required, max length 1000| Usage data

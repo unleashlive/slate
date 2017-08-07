@@ -17,7 +17,7 @@ Call this only after first user login. Request need to be signed using credentia
 
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-id | string, uuid | required | User's identity id 
+id | string | required | User's identity id 
 username | string | required | Username alias
 fullName | string | required, max length 100 | Name of the user
 email | string | required, email format | User email
@@ -42,7 +42,7 @@ Retrieve user by ID
 
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-id | string | required, uuid format| id of the user
+id | string | required, uuid format| id of the user (base64 encoded)
 
 
 
@@ -69,7 +69,13 @@ Replace a given attribute with new value
 
  ` PUT /user/{id}`
  
-#### Parameters
+#### Path parameters
+
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+id | string | required, uuid format| id of the user (base64 encoded)
+
+#### Payload
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
 attributeName | string | required| the name of the attribute
@@ -86,7 +92,7 @@ To upload a company logo, you need to call API to request a presigned URL and th
 
 #### Logo stored location
 
-Company logos are to the following path:
+Company logos are saved in the following path:
 `/pylot/${identityId}/${companyId}/${filename}`
 
 #### API Endpoint

@@ -71,5 +71,5 @@ prod |  production  | [https://v8ic8csycc.execute-api.ap-southeast-2.amazonaws.c
 
 # API Reference
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/5f9ebd3dbf2fc01c6c2e)
 
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/e7ac03ad09c771821f2a)

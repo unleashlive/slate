@@ -36,7 +36,7 @@ POST /company
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
 id | string, uuid | (auto generated) |  database hash id
-owner | string | required, uuid format| The foreign key id of company owner
+owner | string | required | The foreign key id of company owner
 name | string | required, max length 100 | Name of the company
 address | string | required, max length 200 | Company address
 logo | string | required, url format| Company logo url 
@@ -112,8 +112,8 @@ Replace a given attribute with new value
 #### Parameters
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-attributeName | string | required| the name of the attribute
-attributeValue | string | required| the value to assign
+`attributeName` | string | required| the name of the attribute
+`attributeValue` | string | required| the value to assign
 
 
 ### Delete a Company
@@ -136,6 +136,12 @@ Assign a user to a company
 
 `POST /company/{companyId}/user/{userId}`
 
+#### Payload
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+`companyId` | string | required| company id
+`userId` | string | required| user's identityId (base64 encoded)
+
 
 ### List company users
 
@@ -150,6 +156,12 @@ Retrieve user of particular company by unique ID.
 
 ` DELETE /company/{companyId}/user/{userId} `
 
+#### Payload
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+`companyId` | string | required| company id
+`userId` | string | required| user's identityId (base64 encoded)
+
 
 ### Add company device 
 
@@ -158,6 +170,12 @@ Assign a device to a company
 #### API Endpoint
 
 `POST /company/{companyId}/device/{deviceId}`
+
+#### Payload
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+`companyId` | string | required| company id
+`deviceId` | string | required| device id
 
 
 ### List company devices
