@@ -134,9 +134,9 @@ Assign a user to a company
 
 #### API Endpoint
 
-`POST /company/{companyId}/user/{userId}`
+`PUT /company/{companyId}/user/{userId}`
 
-#### Payload
+#### Path parameters
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
 `companyId` | string | required| company id
