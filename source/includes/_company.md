@@ -134,13 +134,17 @@ Assign a user to a company
 
 #### API Endpoint
 
-`PUT /company/{companyId}/user/{userId}`
+`POST /company/{companyId}/user/`
 
 #### Path parameters
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
 `companyId` | string | required| company id
-`userId` | string | required| user's identityId (base64 encoded)
+
+#### Payload
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+`userId` | string | required| user's identityId (URI encoded)
 
 
 ### List company users
@@ -154,13 +158,18 @@ Retrieve user of particular company by unique ID.
 ### Remove user from a company
 #### API Endpoint
 
-` DELETE /company/{companyId}/user/{userId} `
+` DELETE /company/{companyId}/user`
+
+
+#### Path parameters
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+`companyId` | string | required| company id
 
 #### Payload
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-`companyId` | string | required| company id
-`userId` | string | required| user's identityId (base64 encoded)
+`userId` | string | required| user's identityId
 
 
 ### Add company device 
@@ -169,12 +178,16 @@ Assign a device to a company
 
 #### API Endpoint
 
-`POST /company/{companyId}/device/{deviceId}`
+`POST /company/{companyId}/device`
+
+#### Path parameters
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+`companyId` | string | required| company id
 
 #### Payload
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-`companyId` | string | required| company id
 `deviceId` | string | required| device id
 
 
@@ -190,4 +203,16 @@ Retrieve device of particular company by unique ID.
 
 #### API Endpoint
 
-` DELETE /company/{companyId}/device/{deviceId} `
+` DELETE /company/{companyId}/device`
+
+
+
+#### Path parameters
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+`companyId` | string | required| company id
+
+#### Payload
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+`deviceId` | string | required| device id

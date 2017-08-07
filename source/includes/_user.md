@@ -8,6 +8,9 @@ Create new representation of Unleash User.
 <aside class="notice">
 Call this only after first user login. Request need to be signed using credentials obtained from identity pool (Cognito user credentials)
 </aside>
+<aside class="notice">
+User id may contain special characters. To send it in path parameters, use encoudeURIcomponent to encode all the special chars.
+</aside>
 
 #### API Endpoint
 
@@ -42,7 +45,7 @@ Retrieve user by ID
 
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-id | string | required, uuid format| id of the user (base64 encoded)
+id | string | required, uuid format| id of the user (URI encoded)
 
 
 
@@ -73,7 +76,7 @@ Replace a given attribute with new value
 
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-id | string | required, uuid format| id of the user (base64 encoded)
+id | string | required, uuid format| id of the user (URI encoded)
 
 #### Payload
 Name | Type | Constraints | Description
