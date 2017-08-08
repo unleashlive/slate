@@ -100,20 +100,25 @@ List all the companies
 
  
 ```
- PUT /company/{id}
+ PATCH /company/{id}
 ```
-Replace a given attribute with new value
+Replace a given subset of attributes.
 
 
 #### API Endpoint
 
- ` PUT /company/{id}`
+ ` PATCH /company/{id}`
  
-#### Parameters
+#### Payload
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-`attributeName` | string | required| the name of the attribute
-`attributeValue` | string | required| the value to assign
+owner | string | required | The foreign key id of company owner
+name | string | required, max length 100 | Name of the company
+address | string | required, max length 200 | Company address
+logo | string | required, url format| Company logo url 
+brandColor | string | required, max length 100 | Company color, hex or descriptive
+website | string | optional  | URL to company website
+industry | string | required, max length 50| Business industry
 
 
 ### Delete a Company

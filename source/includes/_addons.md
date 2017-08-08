@@ -59,20 +59,22 @@ List all the addons
 
  
 ```
- PUT /addon/{id}
+ PATCH /addon/{id}
 ```
-Replace a given attribute with new value
+Replace a given subset of attributes.
 
 
 #### API Endpoint
 
- ` PUT /addon/{id}`
+ ` PATCH /addon/{id}`
  
-#### Parameters
+#### Payload
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-attributeName | string | required| the name of the attribute
-attributeValue | string | required| the value to assign
+`name` | string | required | addon name
+`price`  | string | required | addon price per month
+`currency` | string | required | price currency in standard ISO 4217 - e.g. AUD
+`description` | string | required | addon description, features available
 
 
 ### Delete an addon

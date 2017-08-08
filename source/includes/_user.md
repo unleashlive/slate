@@ -63,26 +63,20 @@ List all the users
 
  
 ```
- PUT /user/{id}
+ PATCH /user/{id}
 ```
-Replace a given attribute with new value
-
+Replace a given subset of attributes.
 
 #### API Endpoint
 
- ` PUT /user/{id}`
- 
-#### Path parameters
-
-Name | Type | Constraints | Description
---------|-------|--------- | ------
-id | string | required, uuid format| id of the user (URI encoded)
+ ` PATCH /user/{id}`
 
 #### Payload
+
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-attributeName | string | required| the name of the attribute
-attributeValue | string | required| the value to assign
+username | string | required | Username alias
+fullName | string | required, max length 100 | Name of the user
 
 
 ### List user's companies

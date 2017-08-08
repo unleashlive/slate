@@ -59,20 +59,22 @@ List all the products
 
  
 ```
- PUT /product/{id}
+ PATCH /product/{id}
 ```
-Replace a given attribute with new value
+Replace a given subset of attributes.
 
 
 #### API Endpoint
 
- ` PUT /product/{id}`
+ ` PATCH /product/{id}`
  
-#### Parameters
+#### Payload
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-attributeName | string | required| the name of the attribute
-attributeValue | string | required| the value to assign
+`price`  | string | required | product price per month
+`currency` | string | required | price currency in standard ISO 4217 - e.g. AUD
+`name` | string | required | product name
+`description` | string | required | product description, features available
 
 
 ### Delete a product

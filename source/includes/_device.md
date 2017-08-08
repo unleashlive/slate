@@ -61,20 +61,23 @@ List all the devices
 
  
 ```
- PUT /device/{id}
+ PATCH /device/{id}
 ```
-Replace a given attribute with new value
+Replace a given subset of attributes.
 
 
 #### API Endpoint
 
- ` PUT /device/{id}`
+ ` PATCH /device/{id}`
  
-#### Parameters
+#### Payload
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-attributeName | string | required| the name of the attribute
-attributeValue | string | required| the value to assign
+owner | string | required| The foreign key id of device owner
+name | string | required, max length 100 | Name of the device
+hwstats | string | required, max length 500 | Hardware stats
+usage | string | required, max length 1000| Usage data
+device | string | required, max length 100| Usage data
 
 
 ### Delete a device

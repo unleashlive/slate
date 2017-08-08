@@ -70,20 +70,25 @@ List all the plans
 
  
 ```
- PUT /plan/{id}
+ PATCH /plan/{id}
 ```
-Replace a given attribute with new value
+Replace a given subset of attributes.
 
 
 #### API Endpoint
 
- ` PUT /plan/{id}`
+ ` PATCH /plan/{id}`
  
-#### Parameters
+#### Payload
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-attributeName | string | required| the name of the attribute
-attributeValue | string | required| the value to assign
+`name` | string | required | plan name 
+`description` | string | required | plan description, features available
+`price`  | number | required | plan price per month (x*100)
+`currency` | string | optional | price currency in standard ISO 4217. Default: AUD
+`products` | array | optional | array of required product ids
+`freeTrial` | boolean | optional | promotion flag, free length promotion
+`isActive` | boolean | required | flag indicating if plan is current
 
 
 ### Delete a plan
