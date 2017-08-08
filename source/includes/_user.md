@@ -85,6 +85,26 @@ attributeName | string | required| the name of the attribute
 attributeValue | string | required| the value to assign
 
 
+### List user's companies
+
+ 
+```
+ GET /user/{id}/company
+```
+List all companies that user has been assigned to.
+
+
+#### API Endpoint
+
+ ` GET /user/{id}/company`
+ 
+#### Path parameters
+
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+id | string | required, uuid format| id of the user (URI encoded)
+
+
 ### Upload company logo
 
 To upload a company logo, you need to call API to request a presigned URL and then upload it directly to s3 using the given url.

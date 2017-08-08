@@ -96,3 +96,22 @@ Name | Type | Constraints | Description
 id | string | required, uuid format| id of the device
 
 
+
+### List device's companies
+
+ 
+```
+ GET /device/{id}/company
+```
+List all companies that device has been assigned to.
+
+
+#### API Endpoint
+
+ ` GET /device/{id}/company`
+ 
+#### Path parameters
+
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+id | string | required, uuid format| id of the device 
