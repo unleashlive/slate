@@ -46,6 +46,47 @@ If you need more help you can find more information and answers to questions in 
 
 All requests need to be signed using SIGv4.  [Resource](http://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html)
 
+```
+# example: sign request using python
+import boto3
+import datetime
+import json
+from requests_aws4auth import AWS4Auth
+import requests
+
+boto3.setup_default_session(region_name='us-east-1')
+identity = boto3.client('cognito-identity', region_name='us-east-1')
+
+account_id='XXXXXXXXXXXXXXX'
+identity_pool_id='us-east-1:YYY-YYYY-YYY-YY'
+api_prefix='ZZZZZZZZZ'
+
+response = identity.get_id(AccountId=account_id, IdentityPoolId=identity_pool_id)
+identity_id = response['IdentityId']
+print ("Identity ID: %s"%identity_id)
+
+resp = identity.get_credentials_for_identity(IdentityId=identity_id)
+secretKey = resp['Credentials']['SecretKey']
+accessKey = resp['Credentials']['AccessKeyId']
+sessionToken = resp['Credentials']['SessionToken']
+expiration = resp['Credentials']['Expiration']
+
+print ("\nSecret Key: %s"%(secretKey))
+print ("\nAccess Key %s"%(accessKey))
+print ("\nSession Token: %s"%(sessionToken))
+print ("\nExpiration: %s"%(expiration))
+
+method = 'GET'
+headers = {}
+body = ''
+service = 'execute-api'
+url = 'https://%s.execute-api.us-east-1.amazonaws.com/dev/helloworld' % api_prefix
+region = 'us-east-1'
+
+auth = AWS4Auth(accessKey, secretKey, region, service, session_token=sessionToken)
+response = requests.request(method, url, auth=auth, data=body, headers=headers)
+print(response.text)
+```
 Requests made from client code, should be signed using temporary credentials retrieved in the event of user authentication.
 User authentication is not part of the Unleash API but it's described below as a reference.
 
