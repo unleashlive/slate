@@ -45,7 +45,7 @@ Retrieve user by ID
 
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-id | string | required, uuid format| id of the user (URI encoded)
+`id` | string | required, uuid format| id of the user (URI encoded)
 
 
 
@@ -75,8 +75,8 @@ Replace a given subset of attributes.
 
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-username | string | required | Username alias
-fullName | string | required, max length 100 | Name of the user
+`username` | string | required | Username alias
+`fullName` | string | required, max length 100 | Name of the user
 
 
 ### List user's companies
@@ -96,7 +96,7 @@ List all companies that user has been assigned to.
 
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-id | string | required, uuid format| id of the user (URI encoded)
+`id` | string | required, uuid format| id of the user (URI encoded)
 
 
 ### Upload company logo
@@ -119,6 +119,25 @@ Company logos are saved in the following path:
 #### Parameters
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-companyId | string | required| id of the company
-filename | string | required| logo file name
+`companyId` | string | required| id of the company
+`filename` | string | required| logo file name
+
+
+### Add device to a user
+
+Assign a device to a user
+
+#### API Endpoint
+
+`POST /user/{id}/device/`
+
+#### Path parameters
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+`id` | string | required, uuid format| id of the user (URI encoded)
+
+#### Payload
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+`deviceId` | string | required| device id
 
