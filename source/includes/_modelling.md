@@ -32,6 +32,10 @@ Please note the best results can be achieved by using high resolution images
  
 ```
 POST https://94hx3w6zfh.execute-api.ap-southeast-2.amazonaws.com/unleash/stitch
+body: {
+"deviceId":"NOTPI00000000000",
+"items":[{"sessionId":"3","fileName":"216.JPG"},{"sessionId":"3","fileName":"217.JPG"}]
+}
 ```
 
 #### Parameters
