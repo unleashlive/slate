@@ -19,6 +19,7 @@ Name | Type | Constraints | Description
 id | string, uuid | required, max length 100|  unique hardware serial
 owner | string | required| The foreign key id of device owner
 name | string | required, max length 100 | Name of the device
+device | string | max length 200 | Description 
 hwstats | string | required, max length 500 | Hardware stats
 usage | string | required, max length 1000| Usage data
 device | string | required, max length 100| Usage data
@@ -76,6 +77,7 @@ Name | Type | Constraints | Description
 owner | string | required| The foreign key id of device owner
 name | string | required, max length 100 | Name of the device
 hwstats | string | required, max length 500 | Hardware stats
+description | string | max length 200 | Description
 usage | string | required, max length 1000| Usage data
 device | string | required, max length 100| Usage data
 
