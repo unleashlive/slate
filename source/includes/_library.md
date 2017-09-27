@@ -24,24 +24,39 @@ After you obtain the presigned url, you need to perform browser based upload to 
 
 ### List session media files
 
-Retrieve all images and videos recorded on a given device in particular session.
+Retrieve all images and videos uploaded on a given device in particular session.
 #### API Endpoint
 
- `GET /library/device/{deviceId}/session/{sessionId}`
+ `GET /library/media/device/{deviceId}/session/{sessionId}`
  
 ### List device media files
 
-Retrieve all images and videos recorded on a given device in any session.
+Retrieve all images and videos uploaded on a given device in any session.
 #### API Endpoint
 
- `GET /library/device/{deviceId}/session}`
+ `GET /library/media/device/{deviceId}`
+ 
+### List all media files
+
+Retrieve all images and videos uploaded by user.
+#### API Endpoint
+
+ `GET /library/media/`
  
 ### List device sessions
 
-Retrieve list of sessions recorded using particular device.
+Retrieve list of sessions recorded on a given device.
 #### API Endpoint
 
  `GET /library/session/device/{deviceId}/`
+ 
+### List solutions 
+
+Retrieve ODM solutions by created from photos uploaded on given device and session
+
+#### API Endpoint
+
+ `GET /library/solution/device/{deviceId}/session/{sessionId}`
 
 
 
