@@ -22,6 +22,7 @@ includes:
   - plans
   - products
   - modelling
+  - mediatools
   - errors
 
 search: true
