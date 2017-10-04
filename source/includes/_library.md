@@ -60,3 +60,22 @@ Retrieve ODM solutions by created from photos uploaded on given device and sessi
 
 
 
+ 
+### Delete library items
+
+Delete objects stored in S3.
+
+#### API Endpoint
+
+ `DELETE /library/delete`
+
+#### Parameters
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+objectKeys | string | required| list of keys to delete
+
+```
+Payload {
+    objectKeys: ['key1', 'key2']
+}
+```
