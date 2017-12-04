@@ -141,3 +141,77 @@ Name | Type | Constraints | Description
 --------|-------|--------- | ------
 `deviceId` | string | required| device id
 
+
+### List user's devices
+
+ 
+```
+ GET /user/{id}/device
+```
+List all devices that user has been assigned to.
+
+
+#### API Endpoint
+
+ ` GET /user/{id}/company`
+ 
+#### Path parameters
+
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+`id` | string | required, uuid format| id of the user (URI encoded)
+
+### Delete user device
+
+ 
+```
+ DELETE /user/{id}/device
+ payload: 
+    { 
+        deviceId: 'deviceId123'
+    }
+```
+Remove user device association.
+
+
+#### API Endpoint
+
+ ` GET /user/{id}/company`
+ 
+#### Path parameters
+
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+`id` | string | required, uuid format| id of the user (URI encoded)
+
+
+
+### Get user stream model
+
+#### API Endpoint
+
+ ` GET /user/{token}/model`
+ 
+```
+ GET /user/{token}/model
+  
+```
+
+#### Parameters
+
+Name | Type | Constraints | Description
+--------|-------|--------- | ------
+token | string | required | user's stream token
+
+
+#### Response
+
+```
+    {
+      modelId: '0001',
+      modelName: 'Default',
+      pbPath: 'stream_test/default.pb',
+      pbTxtPath: 'stream_test/default.pbtxt',
+    };
+```
+
