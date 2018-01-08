@@ -4,7 +4,7 @@ The API represents methods to integrate user interface with Unleash S3 storage.
 
 ### Upload a media file
 
-In order to upload file to Unleash S3, call this endpoint to receive presigned POST url and headers. These will be used to construct a second request to upload the file directly to S3.
+In order to upload file to Unleash Library, call this endpoint to receive presigned POST url and headers. These will be used to construct a second request to upload the file directly to S3.
 
 #### API Endpoint
 
@@ -13,7 +13,7 @@ In order to upload file to Unleash S3, call this endpoint to receive presigned P
 #### Parameters
 Name | Type | Constraints | Description
 --------|-------|--------- | ------
-deviceId | string | required| the device id, which was used to capture the file
+deviceId | string | required| the device id used to capture the file
 sessionId | string | required| the session id the file belongs to
 filename | string | required| the name which will be assigned in s3 storage
 

@@ -100,8 +100,3 @@ Status | Description
 The result files are available at S3:
 
  - `/pylot/${identityId}/modelling-${timestamp}/code`
-
-
-## Unleash Recognition
-
-to be defined
