@@ -1,0 +1,1897 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Unleash live API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;shell&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="shell">shell</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc" class="toc-list-h1">
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#user-registration" class="toc-h2 toc-link" data-title="Authentication">User registration</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#staging-environments" class="toc-h1 toc-link" data-title="Staging environments">Staging environments</a>
+          </li>
+          <li>
+            <a href="#api-reference" class="toc-h1 toc-link" data-title="API Reference">API Reference</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#company" class="toc-h2 toc-link" data-title="API Reference">Company</a>
+                  </li>
+                  <li>
+                    <a href="#user" class="toc-h2 toc-link" data-title="API Reference">User</a>
+                  </li>
+                  <li>
+                    <a href="#device" class="toc-h2 toc-link" data-title="API Reference">Device</a>
+                  </li>
+                  <li>
+                    <a href="#library" class="toc-h2 toc-link" data-title="API Reference">Library</a>
+                  </li>
+                  <li>
+                    <a href="#plans" class="toc-h2 toc-link" data-title="API Reference">Plans</a>
+                  </li>
+                  <li>
+                    <a href="#products" class="toc-h2 toc-link" data-title="API Reference">Products</a>
+                  </li>
+                  <li>
+                    <a href="#unleash-modelling" class="toc-h2 toc-link" data-title="API Reference">Unleash Modelling</a>
+                  </li>
+                  <li>
+                    <a href="#unleash-recognition" class="toc-h2 toc-link" data-title="API Reference">Unleash Recognition</a>
+                  </li>
+                  <li>
+                    <a href="#unleash-media-tools" class="toc-h2 toc-link" data-title="API Reference">Unleash Media Tools</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#the-error-response-format" class="toc-h2 toc-link" data-title="Errors">The error response format</a>
+                  </li>
+              </ul>
+          </li>
+      </div>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/unleashlive'>Unleash repositories</a></li>
+            <li><a href='https://www.unleashlive.com' target="_blank">Request API key</a></li>
+            <li><a href='https://www.unleashlive.com' target="_blank">Find answers in our FAQ</a></li>
+            <li><a href='https://stackoverflow.com' target="_blank">Ask on Stack Overflow</a></li>
+            <li><a href='https://au.linkedin.com/company/unleash-live' target="_blank">Follow us on LinkedIn</a></li>
+            <li><a href='https://www.unleashlive.com'>Sign in to your account</a></li>
+            <li><a href='https://au.linkedin.com/company/unleash-live' target="_blank">Join the team!</a></li>
+            <li>(c) Copyright Unleash live Pty Ptd.</li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='introduction'>Introduction</h1>
+<p>Welcome to the Unleash live API!</p>
+
+<p>Unleash live APIs connect you to all the data you need to build an innovative website or app.</p>
+
+<p>You can use our API to access Unleash API endpoints, which can get information on RESTful resources and media data.
+Build tools that solve real business problems around the world.</p>
+
+<aside class="success">
+In order to use our APIs you need to contact us to request an API key via <a href='https://www.unleashlive.com' target="_blank">this form.</a>
+
+If you need more help you can find more information and answers to questions in our FAQ which we continuously update.
+</aside>
+<h1 id='authentication'>Authentication</h1>
+<p>All requests need to be signed using SIGv4.  <a href="http://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html">Resource</a></p>
+<pre class="highlight plaintext"><code># example: sign request using python
+import boto3
+import datetime
+import json
+from requests_aws4auth import AWS4Auth
+import requests
+
+boto3.setup_default_session(region_name='us-east-1')
+identity = boto3.client('cognito-identity', region_name='us-east-1')
+
+account_id='XXXXXXXXXXXXXXX'
+identity_pool_id='us-east-1:YYY-YYYY-YYY-YY'
+api_prefix='ZZZZZZZZZ'
+
+response = identity.get_id(AccountId=account_id, IdentityPoolId=identity_pool_id)
+identity_id = response['IdentityId']
+print ("Identity ID: %s"%identity_id)
+
+resp = identity.get_credentials_for_identity(IdentityId=identity_id)
+secretKey = resp['Credentials']['SecretKey']
+accessKey = resp['Credentials']['AccessKeyId']
+sessionToken = resp['Credentials']['SessionToken']
+expiration = resp['Credentials']['Expiration']
+
+print ("\nSecret Key: %s"%(secretKey))
+print ("\nAccess Key %s"%(accessKey))
+print ("\nSession Token: %s"%(sessionToken))
+print ("\nExpiration: %s"%(expiration))
+
+method = 'GET'
+headers = {}
+body = ''
+service = 'execute-api'
+url = 'https://%s.execute-api.us-east-1.amazonaws.com/dev/helloworld' % api_prefix
+region = 'us-east-1'
+
+auth = AWS4Auth(accessKey, secretKey, region, service, session_token=sessionToken)
+response = requests.request(method, url, auth=auth, data=body, headers=headers)
+print(response.text)
+</code></pre>
+<p>Requests made from client code, should be signed using temporary credentials retrieved in the event of user authentication.
+User authentication is not part of the Unleash API but it&#39;s described below as a reference.</p>
+<h2 id='user-registration'>User registration</h2><h3 id='email-signup'>Email signup</h3>
+<p>On email and password sign up, user is added to Unleash User Pool. 
+Reference <a href="http://docs.aws.amazon.com/cognito/latest/developerguide/tutorial-integrating-user-pools-javascript.html#tutorial-integrating-user-pools-sign-up-users-javascript">http://docs.aws.amazon.com/cognito/latest/developerguide/tutorial-integrating-user-pools-javascript.html#tutorial-integrating-user-pools-sign-up-users-javascript</a></p>
+<h3 id='forgot-password'>Forgot password</h3>
+<p><a href="http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ForgotPassword.html">http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ForgotPassword.html</a></p>
+<h1 id='staging-environments'>Staging environments</h1>
+<p>The following staging environments are used:</p>
+
+<table><thead>
+<tr>
+<th>Environment</th>
+<th>Description</th>
+<th>URL</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>dev</td>
+<td>development, low data quality</td>
+<td><a href="https://8xbk6rnolh.execute-api.ap-southeast-2.amazonaws.com/dev">https://8xbk6rnolh.execute-api.ap-southeast-2.amazonaws.com/dev</a></td>
+</tr>
+<tr>
+<td>test</td>
+<td>tests in continous integration</td>
+<td><a href="https://ncwcpjourd.execute-api.ap-southeast-2.amazonaws.com/test">https://ncwcpjourd.execute-api.ap-southeast-2.amazonaws.com/test</a></td>
+</tr>
+<tr>
+<td>prod</td>
+<td>production</td>
+<td><a href="https://v8ic8csycc.execute-api.ap-southeast-2.amazonaws.com/prod">https://v8ic8csycc.execute-api.ap-southeast-2.amazonaws.com/prod</a></td>
+</tr>
+</tbody></table>
+<h1 id='api-reference'>API Reference</h1>
+<p><a href="https://app.getpostman.com/run-collection/e7ac03ad09c771821f2a"><img src="https://run.pstmn.io/button.svg" alt="Run in Postman" /></a></p>
+<h2 id='company'>Company</h2>
+<p>Represents customer company.</p>
+<h3 id='create-a-company'>Create a company</h3>
+<p>Creates new company item</p>
+<h4 id='api-endpoint'>API Endpoint</h4>
+<p><code>POST /company</code></p>
+<pre class="highlight plaintext"><code>POST /company 
+
+{
+  "method": "POST",
+  "headers": {
+    "host": "https://9hrof0g1r6.execute-api.ap-southeast-2.amazonaws.com/dev/company",
+    "user-agent": "curl/7.49.1",
+    "accept": "*/*"
+  },
+  "body": "{\"owner\": \"cebb901b-52a7-4f1a-b460-c6967a555cfe\",\"name\": \"sadfasfdsaf3\",\"address\": \"Queenscliff Hut 222\",\"logo\": \"http://unleash.com/logo.png\",\"brandColor\": \"blue\",\"website\":\"http://google.com\",\"industry\" :\"chemical\"}",
+  "path": {},
+  "query": {}
+}
+
+
+</code></pre><h4 id='parameters'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string, uuid</td>
+<td>(auto generated)</td>
+<td>database hash id</td>
+</tr>
+<tr>
+<td>owner</td>
+<td>string</td>
+<td>required</td>
+<td>The foreign key id of company owner</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>required, max length 100</td>
+<td>Name of the company</td>
+</tr>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>required, max length 200</td>
+<td>Company address</td>
+</tr>
+<tr>
+<td>logo</td>
+<td>string</td>
+<td>required, url format</td>
+<td>Company logo url</td>
+</tr>
+<tr>
+<td>brandColor</td>
+<td>string</td>
+<td>required, max length 100</td>
+<td>Company color, hex or descriptive</td>
+</tr>
+<tr>
+<td>website</td>
+<td>string</td>
+<td>optional</td>
+<td>URL to company website</td>
+</tr>
+<tr>
+<td>industry</td>
+<td>string</td>
+<td>required, max length 50</td>
+<td>Business industry</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>timestamp</td>
+<td>(auto generated)</td>
+<td>item created timestamp</td>
+</tr>
+<tr>
+<td>updatedAt</td>
+<td>timestamp</td>
+<td>(auto generated)</td>
+<td>item updated timestamp</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>
+{
+  "method": "POST",
+  "headers": {
+    "host": "https://9hrof0g1r6.execute-api.ap-southeast-2.amazonaws.com/dev/company",
+    "user-agent": "curl/7.49.1",
+    "accept": "*/*"
+  },
+  "body": "{\"owner\": \"cebb901b-52a7-4f1a-b460-c6967a555cfe\",\"name\": \"sadfasfdsaf3\",\"address\": \"Queenscliff Hut 222\",\"logo\": \"http://unleash.com/logo.png\",\"brandColor\": \"blue\",\"website\":\"http://google.com\",\"industry\" :\"chemical\"}",
+  "path": {},
+  "query": {}
+}
+
+
+</code></pre><h3 id='get-a-company'>Get a Company</h3>
+<p>Retrieve company by ID</p>
+<h4 id='api-endpoint-2'>API Endpoint</h4>
+<p><code>GET /company/{id}</code></p>
+<pre class="highlight plaintext"><code> GET /company/{id}
+</code></pre><h4 id='parameters-2'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the company</td>
+</tr>
+</tbody></table>
+<h3 id='list-companies'>List companies</h3><pre class="highlight plaintext"><code> GET /company
+</code></pre>
+<p>List all the companies</p>
+<h4 id='api-endpoint-3'>API Endpoint</h4>
+<p><code>GET /company</code></p>
+<h3 id='update-a-company'>Update a Company</h3><pre class="highlight plaintext"><code> PATCH /company/{id}
+</code></pre>
+<p>Replace a given subset of attributes.</p>
+<h4 id='api-endpoint-4'>API Endpoint</h4>
+<p><code>PATCH /company/{id}</code></p>
+<h4 id='payload'>Payload</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>owner</td>
+<td>string</td>
+<td>required</td>
+<td>The foreign key id of company owner</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>required, max length 100</td>
+<td>Name of the company</td>
+</tr>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>required, max length 200</td>
+<td>Company address</td>
+</tr>
+<tr>
+<td>logo</td>
+<td>string</td>
+<td>required, url format</td>
+<td>Company logo url</td>
+</tr>
+<tr>
+<td>brandColor</td>
+<td>string</td>
+<td>required, max length 100</td>
+<td>Company color, hex or descriptive</td>
+</tr>
+<tr>
+<td>website</td>
+<td>string</td>
+<td>optional</td>
+<td>URL to company website</td>
+</tr>
+<tr>
+<td>industry</td>
+<td>string</td>
+<td>required, max length 50</td>
+<td>Business industry</td>
+</tr>
+</tbody></table>
+<h3 id='delete-a-company'>Delete a Company</h3>
+<p>Deletes the company by id</p>
+<h4 id='api-endpoint-5'>API Endpoint</h4>
+<p><code>DELETE /company/{id}</code></p>
+<pre class="highlight plaintext"><code> DELETE /company/{id}
+</code></pre><h3 id='add-company-user'>Add company user</h3>
+<p>Assign a user to a company</p>
+<h4 id='api-endpoint-6'>API Endpoint</h4>
+<p><code>POST /company/{companyId}/user/</code></p>
+<h4 id='path-parameters'>Path parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>companyId</code></td>
+<td>string</td>
+<td>required</td>
+<td>company id</td>
+</tr>
+</tbody></table>
+<h4 id='payload-2'>Payload</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>userId</code></td>
+<td>string</td>
+<td>required</td>
+<td>user&#39;s identityId (URI encoded)</td>
+</tr>
+</tbody></table>
+<h3 id='list-company-users'>List company users</h3>
+<p>Retrieve user of particular company by unique ID.</p>
+<h4 id='api-endpoint-7'>API Endpoint</h4>
+<p><code>GET /company/{companyId}/user</code></p>
+<h3 id='remove-user-from-a-company'>Remove user from a company</h3><h4 id='api-endpoint-8'>API Endpoint</h4>
+<p><code>DELETE /company/{companyId}/user</code></p>
+<h4 id='path-parameters-2'>Path parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>companyId</code></td>
+<td>string</td>
+<td>required</td>
+<td>company id</td>
+</tr>
+</tbody></table>
+<h4 id='payload-3'>Payload</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>userId</code></td>
+<td>string</td>
+<td>required</td>
+<td>user&#39;s identityId</td>
+</tr>
+</tbody></table>
+<h3 id='add-company-device'>Add company device</h3>
+<p>Assign a device to a company</p>
+<h4 id='api-endpoint-9'>API Endpoint</h4>
+<p><code>POST /company/{companyId}/device</code></p>
+<h4 id='path-parameters-3'>Path parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>companyId</code></td>
+<td>string</td>
+<td>required</td>
+<td>company id</td>
+</tr>
+</tbody></table>
+<h4 id='payload-4'>Payload</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>deviceId</code></td>
+<td>string</td>
+<td>required</td>
+<td>device id</td>
+</tr>
+</tbody></table>
+<h3 id='list-company-devices'>List company devices</h3>
+<p>Retrieve device of particular company by unique ID.</p>
+<h4 id='api-endpoint-10'>API Endpoint</h4>
+<p><code>GET /company/{companyId}/device</code></p>
+<h3 id='remove-device-from-a-company'>Remove device from a company</h3><h4 id='api-endpoint-11'>API Endpoint</h4>
+<p><code>DELETE /company/{companyId}/device</code></p>
+<h4 id='path-parameters-4'>Path parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>companyId</code></td>
+<td>string</td>
+<td>required</td>
+<td>company id</td>
+</tr>
+</tbody></table>
+<h4 id='payload-5'>Payload</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>deviceId</code></td>
+<td>string</td>
+<td>required</td>
+<td>device id</td>
+</tr>
+</tbody></table>
+<h2 id='user'>User</h2>
+<p>Represents the Unleash User.</p>
+<h3 id='create-a-user'>Create a user</h3>
+<p>Create new representation of Unleash User. </p>
+
+<aside class="notice">
+Call this only after first user login. Request need to be signed using credentials obtained from identity pool (Cognito user credentials)
+</aside>
+
+<aside class="notice">
+User id may contain special characters. To send it in path parameters, use encoudeURIcomponent to encode all the special chars.
+</aside>
+<h4 id='api-endpoint'>API Endpoint</h4>
+<p><code>POST /user</code></p>
+<h4 id='parameters'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required</td>
+<td>User&#39;s identity id</td>
+</tr>
+<tr>
+<td>username</td>
+<td>string</td>
+<td>required</td>
+<td>Username alias</td>
+</tr>
+<tr>
+<td>fullName</td>
+<td>string</td>
+<td>required, max length 100</td>
+<td>Name of the user</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>required, email format</td>
+<td>User email</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>timestamp</td>
+<td>(auto generated)</td>
+<td>item created timestamp</td>
+</tr>
+<tr>
+<td>updatedAt</td>
+<td>timestamp</td>
+<td>(auto generated)</td>
+<td>item updated timestamp</td>
+</tr>
+</tbody></table>
+<h3 id='get-a-user'>Get a User</h3>
+<p>Retrieve user by ID</p>
+<h4 id='api-endpoint-2'>API Endpoint</h4>
+<p><code>GET /user/{id}</code></p>
+<pre class="highlight plaintext"><code> GET /user/{id}
+</code></pre><h4 id='parameters-2'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the user (URI encoded)</td>
+</tr>
+</tbody></table>
+<h3 id='list-users'>List users</h3><pre class="highlight plaintext"><code> GET /user
+</code></pre>
+<p>List all the users</p>
+<h4 id='api-endpoint-3'>API Endpoint</h4>
+<p><code>GET /user</code></p>
+<h3 id='update-a-user'>Update a User</h3><pre class="highlight plaintext"><code> PATCH /user/{id}
+</code></pre>
+<p>Replace a given subset of attributes.</p>
+<h4 id='api-endpoint-4'>API Endpoint</h4>
+<p><code>PATCH /user/{id}</code></p>
+<h4 id='payload'>Payload</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>username</code></td>
+<td>string</td>
+<td>required</td>
+<td>Username alias</td>
+</tr>
+<tr>
+<td><code>fullName</code></td>
+<td>string</td>
+<td>required, max length 100</td>
+<td>Name of the user</td>
+</tr>
+</tbody></table>
+<h3 id='list-user-39-s-companies'>List user&#39;s companies</h3><pre class="highlight plaintext"><code> GET /user/{id}/company
+</code></pre>
+<p>List all companies that user has been assigned to.</p>
+<h4 id='api-endpoint-5'>API Endpoint</h4>
+<p><code>GET /user/{id}/company</code></p>
+<h4 id='path-parameters'>Path parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the user (URI encoded)</td>
+</tr>
+</tbody></table>
+<h3 id='upload-company-logo'>Upload company logo</h3>
+<p>To upload a company logo, you need to call API to request a presigned URL and then upload it directly to s3 using the given url.</p>
+<pre class="highlight plaintext"><code> POST /user/uploadLogo
+</code></pre><h4 id='logo-stored-location'>Logo stored location</h4>
+<p>Company logos are saved in the following path:
+<code>/pylot/${identityId}/${companyId}/${filename}</code></p>
+<h4 id='api-endpoint-6'>API Endpoint</h4>
+<p><code>POST /user/uploadLogo</code></p>
+<h4 id='parameters-3'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>companyId</code></td>
+<td>string</td>
+<td>required</td>
+<td>id of the company</td>
+</tr>
+<tr>
+<td><code>filename</code></td>
+<td>string</td>
+<td>required</td>
+<td>logo file name</td>
+</tr>
+</tbody></table>
+<h3 id='add-device-to-a-user'>Add device to a user</h3>
+<p>Assign a device to a user</p>
+<h4 id='api-endpoint-7'>API Endpoint</h4>
+<p><code>POST /user/{id}/device/</code></p>
+<h4 id='path-parameters-2'>Path parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the user (URI encoded)</td>
+</tr>
+</tbody></table>
+<h4 id='payload-2'>Payload</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>deviceId</code></td>
+<td>string</td>
+<td>required</td>
+<td>device id</td>
+</tr>
+</tbody></table>
+<h3 id='list-user-39-s-devices'>List user&#39;s devices</h3><pre class="highlight plaintext"><code> GET /user/{id}/device
+</code></pre>
+<p>List all devices that user has been assigned to.</p>
+<h4 id='api-endpoint-8'>API Endpoint</h4>
+<p><code>GET /user/{id}/company</code></p>
+<h4 id='path-parameters-3'>Path parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the user (URI encoded)</td>
+</tr>
+</tbody></table>
+<h3 id='delete-user-device'>Delete user device</h3><pre class="highlight plaintext"><code> DELETE /user/{id}/device
+ payload: 
+    { 
+        deviceId: 'deviceId123'
+    }
+</code></pre>
+<p>Remove user device association.</p>
+<h4 id='api-endpoint-9'>API Endpoint</h4>
+<p><code>GET /user/{id}/company</code></p>
+<h4 id='path-parameters-4'>Path parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the user (URI encoded)</td>
+</tr>
+</tbody></table>
+<h3 id='get-user-stream-model'>Get user stream model</h3><h4 id='api-endpoint-10'>API Endpoint</h4>
+<p><code>GET /user/{token}/model</code></p>
+<pre class="highlight plaintext"><code> GET /user/{token}/model
+
+</code></pre><h4 id='parameters-4'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>token</td>
+<td>string</td>
+<td>required</td>
+<td>user&#39;s stream token</td>
+</tr>
+</tbody></table>
+<h4 id='response'>Response</h4><pre class="highlight plaintext"><code>    {
+      modelId: '0001',
+      modelName: 'Default',
+      pbPath: 'stream_test/default.pb',
+      pbTxtPath: 'stream_test/default.pbtxt',
+    };
+</code></pre><h2 id='device'>Device</h2>
+<p>Represents single device: aircraft, camera etc.</p>
+<h3 id='create-a-device'>Create a device</h3>
+<p>Creates new device item</p>
+<h4 id='api-endpoint'>API Endpoint</h4>
+<p><code>POST /device</code></p>
+<h4 id='parameters'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string, uuid</td>
+<td>(optionally auto generated)</td>
+<td>unique hardware serial, autogenerated if not provided</td>
+</tr>
+<tr>
+<td>owner</td>
+<td>string</td>
+<td>(auto generated)</td>
+<td>The identityId of device owner</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>max length 100, (optionally auto generated)</td>
+<td>Name of the device, autogenerated if not provided</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>optional</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>hwstats</td>
+<td>string</td>
+<td>optional</td>
+<td>Hardware stats</td>
+</tr>
+<tr>
+<td>usage</td>
+<td>string</td>
+<td>optional</td>
+<td>Usage data</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>timestamp</td>
+<td>(auto generated)</td>
+<td>item created timestamp</td>
+</tr>
+<tr>
+<td>updatedAt</td>
+<td>timestamp</td>
+<td>(auto generated)</td>
+<td>item updated timestamp</td>
+</tr>
+</tbody></table>
+<h3 id='get-a-device'>Get a Device</h3>
+<p>Retrieve device by ID</p>
+<h4 id='api-endpoint-2'>API Endpoint</h4>
+<p><code>GET /device/{id}</code></p>
+<pre class="highlight plaintext"><code> GET /device/{id}
+</code></pre><h4 id='parameters-2'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the device</td>
+</tr>
+</tbody></table>
+<h3 id='list-devices'>List devices</h3><pre class="highlight plaintext"><code> GET /device
+</code></pre>
+<p>List all the devices</p>
+<h4 id='api-endpoint-3'>API Endpoint</h4>
+<p><code>GET /device</code></p>
+<h3 id='update-a-device'>Update a device</h3><pre class="highlight plaintext"><code> PATCH /device/{id}
+</code></pre>
+<p>Replace a given subset of attributes.</p>
+<h4 id='api-endpoint-4'>API Endpoint</h4>
+<p><code>PATCH /device/{id}</code></p>
+<h4 id='payload'>Payload</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>optional, max length 100</td>
+<td>Name of the device</td>
+</tr>
+<tr>
+<td>hwstats</td>
+<td>string</td>
+<td>optional,</td>
+<td>Hardware stats</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>optional</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>usage</td>
+<td>string</td>
+<td>optional</td>
+<td>Usage data</td>
+</tr>
+</tbody></table>
+<h3 id='delete-a-device'>Delete a device</h3>
+<p>Deletes the device by id</p>
+<h4 id='api-endpoint-5'>API Endpoint</h4>
+<p><code>DELETE /device/{id}</code></p>
+<pre class="highlight plaintext"><code> DELETE /device/{id}
+</code></pre><h4 id='parameters-3'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the device</td>
+</tr>
+</tbody></table>
+<h3 id='list-device-39-s-companies'>List device&#39;s companies</h3><pre class="highlight plaintext"><code> GET /device/{id}/company
+</code></pre>
+<p>List all companies that device has been assigned to.</p>
+<h4 id='api-endpoint-6'>API Endpoint</h4>
+<p><code>GET /device/{id}/company</code></p>
+<h4 id='path-parameters'>Path parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the device</td>
+</tr>
+</tbody></table>
+<h3 id='verify-user-39-s-stream-token'>Verify user&#39;s stream token</h3><pre class="highlight plaintext"><code> GET /device/{id}/verify/{token}
+
+ Response:
+ { 
+    valid: true
+ }
+</code></pre>
+<p>Check if user&#39;s token is valid for a given device.</p>
+<h4 id='api-endpoint-7'>API Endpoint</h4>
+<p><code>GET /device/{id}/verify/{token}</code></p>
+<h4 id='path-parameters-2'>Path parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the user (URI encoded)</td>
+</tr>
+<tr>
+<td>token</td>
+<td>string</td>
+<td>required</td>
+<td>stream token</td>
+</tr>
+</tbody></table>
+<h2 id='library'>Library</h2>
+<p>The API represents methods to integrate user interface with Unleash S3 storage.  </p>
+<h3 id='upload-a-media-file'>Upload a media file</h3>
+<p>In order to upload file to Unleash S3, call this endpoint to receive presigned POST url and headers. These will be used to construct a second request to upload the file directly to S3.</p>
+<h4 id='api-endpoint'>API Endpoint</h4>
+<p><code>POST /library/upload</code></p>
+<h4 id='parameters'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>deviceId</td>
+<td>string</td>
+<td>required</td>
+<td>the device id, which was used to capture the file</td>
+</tr>
+<tr>
+<td>sessionId</td>
+<td>string</td>
+<td>required</td>
+<td>the session id the file belongs to</td>
+</tr>
+<tr>
+<td>filename</td>
+<td>string</td>
+<td>required</td>
+<td>the name which will be assigned in s3 storage</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+After you obtain the presigned url, you need to perform browser based upload to S3. More details in S3 API documentation: http://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-post-example.html
+</aside>
+<h3 id='list-session-media-files'>List session media files</h3>
+<p>Retrieve all images and videos uploaded on a given device in particular session.</p>
+<h4 id='api-endpoint-2'>API Endpoint</h4>
+<p><code>GET /library/media/device/{deviceId}/session/{sessionId}</code></p>
+<h3 id='list-device-media-files'>List device media files</h3>
+<p>Retrieve all images and videos uploaded on a given device in any session.</p>
+<h4 id='api-endpoint-3'>API Endpoint</h4>
+<p><code>GET /library/media/device/{deviceId}</code></p>
+<h3 id='list-all-media-files'>List all media files</h3>
+<p>Retrieve all images and videos uploaded by user.</p>
+<h4 id='api-endpoint-4'>API Endpoint</h4>
+<p><code>GET /library/media/</code></p>
+<h3 id='list-device-sessions'>List device sessions</h3>
+<p>Retrieve list of sessions recorded on a given device.</p>
+<h4 id='api-endpoint-5'>API Endpoint</h4>
+<p><code>GET /library/session/device/{deviceId}/</code></p>
+<h3 id='list-solutions'>List solutions</h3>
+<p>Retrieve ODM solutions by created from photos uploaded on given device and session</p>
+<h4 id='api-endpoint-6'>API Endpoint</h4>
+<p><code>GET /library/solution/device/{deviceId}/session/{sessionId}</code></p>
+<h3 id='delete-library-items'>Delete library items</h3>
+<p>Delete objects stored in S3.</p>
+<h4 id='api-endpoint-7'>API Endpoint</h4>
+<p><code>DELETE /library/delete</code></p>
+<h4 id='parameters-2'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>objectKeys</td>
+<td>string</td>
+<td>required</td>
+<td>list of keys to delete or foldername (read below)</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>Payload {
+    objectKeys: ['key1', 'key2']
+}
+</code></pre>
+<aside class="notice">
+The endpoint is capable of deleting files or a folder. To delete a folder just pass folder path ending with '/' as an array.
+It's not possible to delete multiple folders in one request.
+</aside>
+<pre class="highlight plaintext"><code>Delete folder payload {
+    objectKeys: ['path/to/folder/']
+}
+</code></pre><h2 id='plans'>Plans</h2>
+<p>There are the following plans available:</p>
+
+<ul>
+<li>bundle</li>
+<li>starter</li>
+<li>models</li>
+<li>tours</li>
+<li>planion</li>
+<li>recognition</li>
+<li>expired</li>
+</ul>
+<h3 id='create-a-plan'>Create a plan</h3>
+<p>Creates new plan item</p>
+<h4 id='api-endpoint'>API Endpoint</h4>
+<p><code>POST /plan</code></p>
+<h4 id='parameters'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>string, uuid</td>
+<td>(auto generated)</td>
+<td>database hash id</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>required</td>
+<td>plan name</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>string</td>
+<td>required</td>
+<td>plan description, features available</td>
+</tr>
+<tr>
+<td><code>price</code></td>
+<td>number</td>
+<td>required</td>
+<td>plan price per month (x*100)</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>optional</td>
+<td>price currency in standard ISO 4217. Default: AUD</td>
+</tr>
+<tr>
+<td><code>products</code></td>
+<td>array</td>
+<td>optional</td>
+<td>array of required product ids</td>
+</tr>
+<tr>
+<td><code>freeTrial</code></td>
+<td>boolean</td>
+<td>optional</td>
+<td>promotion flag, free length promotion</td>
+</tr>
+<tr>
+<td><code>isActive</code></td>
+<td>boolean</td>
+<td>required</td>
+<td>flag indicating if plan is current</td>
+</tr>
+<tr>
+<td><code>createdAt</code></td>
+<td>timestamp</td>
+<td>(auto generated)</td>
+<td>item created timestamp</td>
+</tr>
+<tr>
+<td><code>updatedAt</code></td>
+<td>timestamp</td>
+<td>(auto generated)</td>
+<td>item updated timestamp</td>
+</tr>
+</tbody></table>
+<h3 id='get-a-plan'>Get a plan</h3>
+<p>Retrieve plan by ID</p>
+<h4 id='api-endpoint-2'>API Endpoint</h4>
+<p><code>GET /plan/{id}</code></p>
+<pre class="highlight plaintext"><code> GET /plan/{id}
+</code></pre><h4 id='parameters-2'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the plan</td>
+</tr>
+</tbody></table>
+<h3 id='list-plans'>List plans</h3><pre class="highlight plaintext"><code> GET /plan
+</code></pre>
+<p>List all the plans</p>
+<h4 id='api-endpoint-3'>API Endpoint</h4>
+<p><code>GET /plan</code></p>
+<h3 id='update-a-plan'>Update a plan</h3><pre class="highlight plaintext"><code> PATCH /plan/{id}
+</code></pre>
+<p>Replace a given subset of attributes.</p>
+<h4 id='api-endpoint-4'>API Endpoint</h4>
+<p><code>PATCH /plan/{id}</code></p>
+<h4 id='payload'>Payload</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>required</td>
+<td>plan name</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>string</td>
+<td>required</td>
+<td>plan description, features available</td>
+</tr>
+<tr>
+<td><code>price</code></td>
+<td>number</td>
+<td>required</td>
+<td>plan price per month (x*100)</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>optional</td>
+<td>price currency in standard ISO 4217. Default: AUD</td>
+</tr>
+<tr>
+<td><code>products</code></td>
+<td>array</td>
+<td>optional</td>
+<td>array of required product ids</td>
+</tr>
+<tr>
+<td><code>freeTrial</code></td>
+<td>boolean</td>
+<td>optional</td>
+<td>promotion flag, free length promotion</td>
+</tr>
+<tr>
+<td><code>isActive</code></td>
+<td>boolean</td>
+<td>required</td>
+<td>flag indicating if plan is current</td>
+</tr>
+</tbody></table>
+<h3 id='delete-a-plan'>Delete a plan</h3>
+<p>Deletes the plan by id</p>
+<h4 id='api-endpoint-5'>API Endpoint</h4>
+<p><code>DELETE /plan/{id}</code></p>
+<pre class="highlight plaintext"><code> DELETE /plan/{id}
+</code></pre><h4 id='parameters-3'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the plan</td>
+</tr>
+</tbody></table>
+<h2 id='products'>Products</h2>
+<p>Represents Unleash hardware products</p>
+<h3 id='create-a-product'>Create a product</h3>
+<p>Creates new product item</p>
+<h4 id='api-endpoint'>API Endpoint</h4>
+<p><code>POST /product</code></p>
+<h4 id='parameters'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>string, uuid</td>
+<td>(auto generated)</td>
+<td>database hash id</td>
+</tr>
+<tr>
+<td><code>price</code></td>
+<td>string</td>
+<td>required</td>
+<td>product price per month</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>required</td>
+<td>price currency in standard ISO 4217 - e.g. AUD</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>required</td>
+<td>product name</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>string</td>
+<td>required</td>
+<td>product description, features available</td>
+</tr>
+<tr>
+<td><code>createdAt</code></td>
+<td>timestamp</td>
+<td>(auto generated)</td>
+<td>item created timestamp</td>
+</tr>
+<tr>
+<td><code>updatedAt</code></td>
+<td>timestamp</td>
+<td>(auto generated)</td>
+<td>item updated timestamp</td>
+</tr>
+</tbody></table>
+<h3 id='get-a-product'>Get a product</h3>
+<p>Retrieve product by ID</p>
+<h4 id='api-endpoint-2'>API Endpoint</h4>
+<p><code>GET /product/{id}</code></p>
+<pre class="highlight plaintext"><code> GET /product/{id}
+</code></pre><h4 id='parameters-2'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the product</td>
+</tr>
+</tbody></table>
+<h3 id='list-products'>List products</h3><pre class="highlight plaintext"><code> GET /product
+</code></pre>
+<p>List all the products</p>
+<h4 id='api-endpoint-3'>API Endpoint</h4>
+<p><code>GET /product</code></p>
+<h3 id='update-a-product'>Update a product</h3><pre class="highlight plaintext"><code> PATCH /product/{id}
+</code></pre>
+<p>Replace a given subset of attributes.</p>
+<h4 id='api-endpoint-4'>API Endpoint</h4>
+<p><code>PATCH /product/{id}</code></p>
+<h4 id='payload'>Payload</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>price</code></td>
+<td>string</td>
+<td>required</td>
+<td>product price per month</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td>required</td>
+<td>price currency in standard ISO 4217 - e.g. AUD</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>required</td>
+<td>product name</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>string</td>
+<td>required</td>
+<td>product description, features available</td>
+</tr>
+</tbody></table>
+<h3 id='delete-a-product'>Delete a product</h3>
+<p>Deletes the product by id</p>
+<h4 id='api-endpoint-5'>API Endpoint</h4>
+<p><code>DELETE /product/{id}</code></p>
+<pre class="highlight plaintext"><code> DELETE /product/{id}
+</code></pre><h4 id='parameters-3'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required, uuid format</td>
+<td>id of the product</td>
+</tr>
+</tbody></table>
+<h2 id='unleash-modelling'>Unleash Modelling</h2><h3 id='upload-the-files'>Upload the files</h3>
+<p>Call API for presigned post request and then upload it manually using PUT request to S3.</p>
+<h3 id='api-endpoint'>API endpoint</h3>
+<p><code>POST https://94hx3w6zfh.execute-api.ap-southeast-2.amazonaws.com/unleash/upload-link</code></p>
+<h4 id='parameters'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>deviceId</code></td>
+<td>string</td>
+<td>required</td>
+<td>device id</td>
+</tr>
+<tr>
+<td><code>sessionId</code></td>
+<td>number</td>
+<td>required</td>
+<td>session id</td>
+</tr>
+<tr>
+<td><code>fileName</code></td>
+<td>string</td>
+<td>required</td>
+<td>file name</td>
+</tr>
+</tbody></table>
+<h3 id='start-modelling'>Start modelling</h3>
+<p>In order to submit processing job, you need to call this endpoint after the files are uploaded to S3.
+This starts the EC2 container with ODM docker image which will process the images and output results to S3.
+<aside class="warning">
+Please note this is asynchronous task and processing might take up to an hour to complete, proportional to the size of the images. 
+All files should be synced to S3 beforehand executing this endpoint - see <strong>Upload the files</strong>
+</aside>
+<aside class="notice">
+Please note the best results can be achieved by using high resolution images 
+</aside> </p>
+<h4 id='api-endpoint-2'>API Endpoint</h4>
+<p><code>POST https://94hx3w6zfh.execute-api.ap-southeast-2.amazonaws.com/unleash/stitch</code></p>
+<pre class="highlight plaintext"><code>POST https://94hx3w6zfh.execute-api.ap-southeast-2.amazonaws.com/unleash/stitch
+body: {
+"deviceId":"NOTPI00000000000",
+"items":[{"sessionId":"3","fileName":"216.JPG"},{"sessionId":"3","fileName":"217.JPG"}]
+}
+</code></pre><h4 id='parameters-2'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>items</code></td>
+<td>array</td>
+<td>required</td>
+<td>items to upload</td>
+</tr>
+<tr>
+<td><code>deviceId</code></td>
+<td>string</td>
+<td>required</td>
+<td>device id</td>
+</tr>
+</tbody></table>
+<h3 id='start-task'>Start task</h3><h4 id='api-endpoint-3'>API Endpoint</h4>
+<p><code>POST /odm/process</code></p>
+<pre class="highlight plaintext"><code>POST /odm/process
+</code></pre><h4 id='parameters-3'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>identityId</td>
+<td>string</td>
+<td>required</td>
+<td>Cognito identity id of the user</td>
+</tr>
+<tr>
+<td>deviceId</td>
+<td>string</td>
+<td>required</td>
+<td>device id</td>
+</tr>
+<tr>
+<td>sessionId</td>
+<td>string</td>
+<td>required</td>
+<td>session id</td>
+</tr>
+<tr>
+<td>inputSize</td>
+<td>number</td>
+<td>optional</td>
+<td>the approximated size of the files to be processed in MB</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+The input size is not currently in use, although its planned in order to implement the dynamic container resource usage utility. The amount of container resources highly depend on the number of files and their size.
+</aside>
+<h3 id='query-modelling-status'>Query modelling status</h3>
+<p>The asynchronous nature of processing data in the containers, implies there is an effort to track progress of the processing status. The monitoring of Unleash modelling jobs is achieved by polling for the container execution status. 
+That might be used to update the UI once the modelling is finished or is interrupted from various errors. </p>
+<h4 id='api-endpoint-4'>API Endpoint</h4>
+<p><code>GET /odm/status/{task}</code></p>
+<h3 id='query-parameters'>Query parameters</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>task</td>
+<td>string</td>
+<td>required</td>
+<td>the base64 encoded task ARN to query</td>
+</tr>
+</tbody></table>
+<h3 id='response'>Response</h3>
+<p>The response payload contains a string only.</p>
+
+<table><thead>
+<tr>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>&quot;PENDING&quot;</td>
+<td>The job is planned to be run on a container</td>
+</tr>
+<tr>
+<td>&quot;RUNNING&quot;</td>
+<td>The job is being processed and container is running</td>
+</tr>
+<tr>
+<td>&quot;STOPPED&quot;</td>
+<td>The job is successfully finished and container is down</td>
+</tr>
+<tr>
+<td>&quot;FAILED&quot;</td>
+<td>The job exited with error code and container is down</td>
+</tr>
+</tbody></table>
+<h3 id='results'>Results</h3>
+<p>The result files are available at S3:</p>
+
+<ul>
+<li><code>/pylot/${identityId}/modelling-${timestamp}/code</code></li>
+</ul>
+<h2 id='unleash-recognition'>Unleash Recognition</h2>
+<p>to be defined</p>
+<h2 id='unleash-media-tools'>Unleash Media Tools</h2><h3 id='authentication'>Authentication</h3>
+<p>The endpoints are secured with IAM.</p>
+<h3 id='video-crop'>Video crop</h3>
+<p>Crop a video within a given time range.</p>
+<h3 id='api-endpoint'>API endpoint</h3>
+<p><code>POST https://8xbk6rnolh.execute-api.ap-southeast-2.amazonaws.com/dev/media/crop</code></p>
+<pre class="highlight plaintext"><code>POST https://8xbk6rnolh.execute-api.ap-southeast-2.amazonaws.com/dev/media/crop
+   {
+     "objectKey": "ap-southeast-2:b9be243f-1c1e-4d92-8a72-2cf5fe1dc5a5/BROWSER/session-1506318704930/Riverside.mp4",
+     "start": "1",
+     "end": "15"
+   }
+</code></pre><h4 id='parameters'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>objectKey</code></td>
+<td>string</td>
+<td>required</td>
+<td>s3 object key</td>
+</tr>
+<tr>
+<td><code>start</code></td>
+<td>string</td>
+<td>required</td>
+<td>start time in seconds</td>
+</tr>
+<tr>
+<td><code>end</code></td>
+<td>string</td>
+<td>required</td>
+<td>end time in seconds</td>
+</tr>
+</tbody></table>
+<h4 id='results'>Results</h4>
+<p>The result video is saved in the same folder with the name appended with timestamp and uuid</p>
+<pre class="highlight plaintext"><code>s3://pylot/ap-southeast-2:b9be243f-1c1e-4d92-8a72-2cf5fe12f5a5/BROWSER/session-1506318704930/Riverside.mp42017-09-27-21-39-62893d96-a3cc-11e7-b790-0242ac110002.mp4
+</code></pre><h3 id='video-concat'>Video concat</h3>
+<p>Merge multiple videos into one.</p>
+<h3 id='api-endpoint-2'>API endpoint</h3>
+<p><code>POST https://8xbk6rnolh.execute-api.ap-southeast-2.amazonaws.com/dev/media/concat</code></p>
+<pre class="highlight plaintext"><code>POST https://8xbk6rnolh.execute-api.ap-southeast-2.amazonaws.com/dev/media/concat
+   {
+     "objectKeys": [
+         "ap-southeast-2:b9be243f-1c1e-4d92-8a72-2cf5fe2vf5a5/BROWSER/session-1506318704930/Riverside.mp4",
+         "ap-southeast-2:b9be243f-1c1e-4d92-8a72-2cf5fe2vf5a5/BROWSER/session-1506318704930/Riverside2.mp4"
+         "ap-southeast-2:b9be243f-1c1e-4d92-8a72-2cf5fe2vf5a5/BROWSER/session-1506318704930/Riverside3.mp4"
+     ]
+   }
+</code></pre><h4 id='parameters-2'>Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Constraints</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>objectKeys</code></td>
+<td>string</td>
+<td>required</td>
+<td>array of object keys</td>
+</tr>
+</tbody></table>
+<h1 id='errors'>Errors</h1>
+<p>The Unlash API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Error Code</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>400</td>
+<td>Bad Request -- Wrong or missing parameters.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Unauthorized -- Your API key is wrong.</td>
+</tr>
+<tr>
+<td>422</td>
+<td>Validation failed -- Params content failed validation.</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+</tr>
+</tbody></table>
+<h3 id='the-error-response-format'>The error response format</h3><pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"message"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="s2">"name"</span><span class="p">:</span><span class="s2">""</span><span class="p">}</span><span class="w">
+</span></code></pre>
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="shell">shell</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
