@@ -21,6 +21,7 @@ includes:
   - library
   - plans
   - products
+  - addons
   - modelling
   - recognition
   - mediatools
