@@ -26,6 +26,7 @@ includes:
   - recognition
   - mediatools
   - errors
+  - faq
 
 search: true
 ---
