@@ -4,10 +4,9 @@ There are the following plans available:
 
  - bundle
  - starter
- - models
- - tours
- - planion
  - recognition
+ - business
+ - enterprise
  - expired
 
 ### Create a plan
