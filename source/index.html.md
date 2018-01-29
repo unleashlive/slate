@@ -117,3 +117,7 @@ prod |  production  | [https://v8ic8csycc.execute-api.ap-southeast-2.amazonaws.c
 
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/e7ac03ad09c771821f2a)
+
+# FAQ
+
+Learn about Unleash live features and fucntionality in our FAQ section.
