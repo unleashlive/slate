@@ -4,15 +4,45 @@ Learn about the Unleash live platform features and benefits.
 
 ## General Unleashlive platform features and functionality
 
+### Why should I use Unleash Live?
+Video is the richest form of sensory feedback available. Video provides an automatic connection between the action and the viewer, especially when it is a live video stream.
+
+This is why the Unleash live platform is so powerful, we connect the field to the office. Now, thanks to our platform, an audience anywhere in the world can be connected to the field operations or events and participate in the decision making process.
+
+Couple this with our Artificial Intelligence Ecosystem and you have the power to use leading A.I. developers to create industry specific algorithms for even faster results.
+
 ### What plans are available and suitable for me?
+We understand that everyone has different requirements so we have designed plans to meet your multiple needs. Begin by testing our platform with the starter plan and simply upgrade when your workflow increases.
+
+Personal - This plan is best for the hobby pilot and video streaming enthusiast.
+Business - These three subscription options are best for businesses with multiple users and multiple drones.
+Enterprise - Custom pricing for enterprise grade services for distributed teams and infrastructure is available upon request.
+
+For more pricing information get started with our free trial and adjust your plan on your profile page
 
 ### How does the subscription plans work?
 
 ### How do I setup my account?
+Setting up your account is easy. Simply go to www.cloud.unleashlive.com enter your email address and a password to get started.
+
+Once you are logged in your will be directed to your profile page where you can edit your profile, add devices and activate services such as modelling, your media store or powerful AI Apps.
 
 ### Can I add and remove devices?
+This is one of the most powerful features of the Unleash live platform. We allow you to add and remove devices as you need.
 
-### How can I activate new AI Models?
+Simply by clicking on the add or manage buttons you can choose to add a new device including an image for the avatar, title and description or edit a current device, as well as deleting any unused devices. 
+
+### What are Apps?
+An AI App is a specialised software application designed by talented developers and stored on our cloud platform for your use. Our AI App Ecosystem provides you with leading industry relevant apps that you can apply to your live video streams or stored video and image to get fast, detailed insights.
+
+Try out our AI Apps Ecosystem today, go to your profile page and scroll through the list.
+
+### How can I activate new AI Apps?
+AI Models add powerful insights to your live video footage or stored video footage.
+
+To activate AI on Live video streaming open the live video page. You will notice that all devices are hidden while they are inactive to reduce clutter. As soon as a device is active the live video footage will appear on the page. At this point AI can be applied by simply choosing your activated model from the drop down menu under the active device.
+
+To activate AI on your stored video and images you will need to navigate to your library where you will find your menu button on the bottom right hand corner. Simply choose the video or image/s you want to analyse, click the menu button and you will be presented with a number of applications choose you application and click to start. After a period of time your analysis results will appear in the Solutions analysis page.
 
 ### How do I navigate around the website?
 
