@@ -37,17 +37,20 @@ An A.I. App is a specialised artifical intelligence powered software application
 Try out our A.I. Apps Ecosystem today, go to your profile page and scroll through the list.
 
 ### How can I activate new A.I. Apps?
-A.I. Models add powerful insights to your live video footage or stored video footage.
+The Unleash live A.I. Apps Ecosystem is located on the profile page within the services tab. Simply scroll through the list of A.I. Apps and choose the relevant app. 
 
-To activate A.I. on Live video streaming open the live video page. You will notice that all devices are hidden while they are inactive to reduce clutter. As soon as a device is active the live video footage will appear on the page. At this point AI can be applied by simply choosing your activated model from the drop down menu under the active device.
-
-To activate A.I. on your stored video and images you will need to navigate to your library where you will find your menu button on the bottom right hand corner. Simply choose the video or image/s you want to analyse, click the menu button and you will be presented with a number of applications choose you application and click to start. After a period of time your analysis results will appear in the Solutions analysis page.
+Click on the A.I. App to open the description and read more or simply click on the activate button to activate the app. Once the app is activated it will change colour and display "activated", making it available for use on your live streams or in your library.
 
 ### How does Live  streaming work?
+Live streaming can be activated very easily. Each device on our platform is given a seperate stream key, which is used to connect your device to the platform through your internet provider. As soon as you "go live" your live stream will be displayed in your live page and any other places you have embedded your feed.
 
 ### How do I apply A.I. to my Live stream?
+To apply AI on Live video streaming open the live video page. You will notice that all devices are hidden while they are inactive to reduce clutter. As soon as a device is active the live video footage will appear on the page. At this point AI can be applied by simply choosing your activated model from the drop down menu under the active device.
+
+To activate AI on your stored video and images you will need to navigate to your library where you will find your menu button on the bottom right hand corner. Simply choose the video or image/s you want to analyse, click the menu button and you will be presented with a number of applications choose you application and click to start. After a period of time your analysis results will appear in the Solutions analysis page.
 
 ### How do I create an orthophoto and 2D/3D model?
+Once you have your captured images in your library, simply select all the images you wish to convert into a orthophoto and click on the menu button located in the bottom right hand corner. From this menus choose create model and the processing will begin. The resulting orthophoto and models will be displayed in you Solutions Models page as soon as the processing has completed.
 
 ## A.I. Apps Ecosystem
 
