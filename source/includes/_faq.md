@@ -41,16 +41,16 @@ The Unleash live A.I. Apps Ecosystem is located on the profile page within the s
 
 Click on the A.I. App to open the description and read more or simply click on the activate button to activate the app. Once the app is activated it will change colour and display "activated", making it available for use on your live streams or in your library.
 
-### How does Live  streaming work?
+### How does Live streaming work?
 Live streaming can be activated very easily. Each device on our platform is given a seperate stream key, which is used to connect your device to the platform through your internet provider. As soon as you "go live" your live stream will be displayed in your live page and any other places you have embedded your feed.
 
 ### How do I apply A.I. to my Live stream?
-To apply AI on Live video streaming open the live video page. You will notice that all devices are hidden while they are inactive to reduce clutter. As soon as a device is active the live video footage will appear on the page. At this point AI can be applied by simply choosing your activated model from the drop down menu under the active device.
+First activate a A.I. app in your profile. To apply A.I. analysis on live video streaming open the live video page. You will notice that all devices are hidden while they are inactive to reduce clutter. As soon as a device is active and streaming the live footage will appear on the page. At this point A.I. analysis can be applied by simply choosing your A.I. app from the drop down menu next to the active live stream. Within seconds the live video feed will have an A.I. analysis overlay.
 
-To activate AI on your stored video and images you will need to navigate to your library where you will find your menu button on the bottom right hand corner. Simply choose the video or image/s you want to analyse, click the menu button and you will be presented with a number of applications choose you application and click to start. After a period of time your analysis results will appear in the Solutions analysis page.
+To activate A.I. on your stored videos and images you will need to navigate to your library where you will find your action button on the bottom right hand corner. Simply choose the video or image/s you want to analyse, click the action button and you will find an option to 'recognise' objects. Select this option to start the A.I. analysis. After a period of time your analysis results will appear in the Solutions Analysis page.
 
-### How do I create an orthophoto and 2D/3D model?
-Once you have your captured images in your library, simply select all the images you wish to convert into a orthophoto and click on the menu button located in the bottom right hand corner. From this menus choose create model and the processing will begin. The resulting orthophoto and models will be displayed in you Solutions Models page as soon as the processing has completed.
+### How do I create an orthophoto and 3D model?
+Once you have your captured images in your library, simply select all the images you wish to convert into a orthophoto and click on the action button located in the bottom right hand corner. From this menu choose 'create model' and the processing will begin. The resulting orthophoto and models will be displayed in you Solutions Models page as soon as the processing has completed.
 
 ## A.I. Apps Ecosystem
 
