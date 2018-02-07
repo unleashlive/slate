@@ -54,18 +54,18 @@ Once you have your captured images in your library, simply select all the images
 
 ## A.I. Apps Ecosystem
 
-Unleash live’s unique AI Apps ecosystem is designed to give developers a simple framework to create, upload and monetize your industry relevant AI apps.
+Unleash live’s unique A.I. Apps ecosystem is designed to give developers a simple framework to create, upload and monetize your industry relevant artifical intelligence apps.
 
 It’s simple;
-- All you need is an idea and an good feel for your potential customers and demand.
-- To begin you will need to sign up to a Unleash live developer account, simply click here 
-- Now the coding begins. Using tf object_detection framework you code the model for training - https://github.com/tensorflow/models/tree/master/research/object_detection
-- Training your models will require sufficient video footage and/or images for accuracy. There are 2 ways of gaining this footage/images: a. either through your own resources or we can connect you with our customer base.
-- Once you are happy with the model accuracy it is time to test. Your model graphs are frozen for deployment. 
-- The developer is then required to upload the num classes / pb / pbtxt into the Unleash live developer sandbox
-- The code is tested against videos and images stored in our Unleash live developer sandbox or other footage you may obtain
-- Once the required accuracy has been achieved during the testing phase you submit the model for approval. The submission will require an estimated price, description of the app and the problem it solves, up to 6 images of the app (for display) - see our submission form framework for all the details.
-- The model is then tested with our Unleash live testing team, amendments are requested and when it is cleared by our team your A.I. model is published and available for purchase by Unleash live customers.
+ - All you need is an idea and an good feel for your potential customers and demand.
+ - To begin you will need to sign up to a Unleash live developer account, simply click here 
+ - Now the coding begins. Using tf object_detection framework you code the model for training - https://github.com/tensorflow/models/tree/master/research/object_detection
+ - Training your models will require sufficient video footage and/or images for accuracy. There are 2 ways of gaining this footage/images: a. either through your own resources or we can connect you with our customer base.
+ - Once you are happy with the model accuracy it is time to test. Your model graphs are frozen for deployment. 
+ - The developer is then required to upload the num classes / pb / pbtxt into the Unleash live developer sandbox
+ - The code is tested against videos and images stored in our Unleash live developer sandbox or other footage you may obtain
+ - Once the required accuracy has been achieved during the testing phase you submit the model for approval. The submission will require an estimated price, description of the app, the problem it solves and up to 6 images of the app UI (for display). See see our submission form framework for all the details.
+ - The model is then tested with our Unleash live testing team, amendments are requested and when it is cleared by our team your A.I. model is published and available for purchase by Unleash live customers.
 
 Finally, improvements and updates can be regularly committed to our sandbox.
 
@@ -75,12 +75,12 @@ Finally, improvements and updates can be regularly committed to our sandbox.
 
 1. Unleash live displays the completed A.I. model on our Services page under relevant industry categories for our customers to search and activate.
 
-Our Unleash live customers purchase a subscription to activate your A.I. model. Pricing may be billed per month or per A.I. processing minute.
+2. Our Unleash live customers purchase a subscription to activate your A.I. model. Pricing may be billed per month or per A.I. processing minute.
 
-2. Who sets the price?
+### Who sets the price?
 You, the developer, select your retail price category. The price categoeries are set by Unleash live and account for various factors such as expected value/demand, cost to process, cost to maintain and other factors.
 
-3. When a customer activates your model you will receive a net revenue based on the subscription retail price, minus a Unleash live management fee.
+When a customer activates your model you will receive a net revenue based on the subscription retail price, minus a Unleash live management fee.
 
 ### How do we stimulate the ecosystem?
 
@@ -109,10 +109,10 @@ Once signed up as Unleash live developer you get access to latest ideas. Unleash
 We believe it is important for the developers to gain insights into successful AI Apps so as to learn and build relevant Apps that will sell. It is also important for the developer to understand how their apps are performing.
 
 The data we collect is:
-- Model usage (minutes / frequency)
-- Industry (which industry uses it)
-- Media type (video / images)
-- Device/Camera location
+ - Model usage (minutes / frequency)
+ - Industry (which industry uses it)
+ - Media type (video / images)
+ - Device/Camera location
 
 ### How much customisation of my A.I. App is possible?
 
@@ -123,7 +123,5 @@ We also offer our customers the chance to customise A.I. apps or build new custo
 ### How can I publish a specific custom model, with a lots of specific details in code and output?
 
 We understand the complexity of code, especially A.I. models. Therefore we have worked hard with our developers to create a simple process in which the developers can upload their code and test the code in our sandbox. This capability and process will expand in the coming months as we learn and iterate. For more information visit:
-
-Unleash live Platform API: 
-https://s3-ap-southeast-2.amazonaws.com/unleash-api-docs/index.html#introduction
+<a href='https://s3-ap-southeast-2.amazonaws.com/unleash-api-docs/index.html#introduction>Unleash live Platform API</a>
 
