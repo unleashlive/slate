@@ -123,5 +123,5 @@ We also offer our customers the chance to customise A.I. apps or build new custo
 ### How can I publish a specific custom model, with a lots of specific details in code and output?
 
 We understand the complexity of code, especially A.I. models. Therefore we have worked hard with our developers to create a simple process in which the developers can upload their code and test the code in our sandbox. This capability and process will expand in the coming months as we learn and iterate. For more information visit:
-<a href='https://s3-ap-southeast-2.amazonaws.com/unleash-api-docs/index.html#introduction>Unleash live Platform API</a>
+<a href='https://s3-ap-southeast-2.amazonaws.com/unleash-api-docs/index.html#introduction'>Unleash live Platform API</a>
 
