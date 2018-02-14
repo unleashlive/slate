@@ -49,6 +49,28 @@ First activate a A.I. app in your profile. To apply A.I. analysis on live video 
 
 To activate A.I. on your stored videos and images you will need to navigate to your library where you will find your action button on the bottom right hand corner. Simply choose the video or image/s you want to analyse, click the action button and you will find an option to 'recognise' objects. Select this option to start the A.I. analysis. After a period of time your analysis results will appear in the Solutions Analysis page.
 
+### Tell me the detailed recommended live video streaming settings?
+
+Video Format
+
+ - We accept video in maximum 720p (1280 x 720) resolution, at 30 frames per second. (or 1 key frame every 2 seconds).
+ - You must send an I-frame (keyframe) at least once every two seconds throughout the stream..
+ - Recommended max bit rate is 4000 Kbps. Usually 2000 Kbps results in a great stream.
+ - We accept H264 encoded video and AAC encoded audio only.
+
+Video Length
+
+ - We do not limit the daily maximum length, however cut off the video if streaming continously for 24 hours.
+ - We store video files in your archive at 15 min lengths.
+
+Advanced Settings
+
+Pixel Aspect Ratio: Square.
+Frame Types: Progressive Scan.
+Audio Sample Rate: 44.1 KHz.
+Audio Bitrate: 128 Kbps stereo.
+Bitrate Encoding: CBR.
+
 ### How do I create an orthophoto and 3D model?
 Once you have your captured images in your library, simply select all the images you wish to convert into a orthophoto and click on the action button located in the bottom right hand corner. From this menu choose 'create model' and the processing will begin. The resulting orthophoto and models will be displayed in you Solutions Models page as soon as the processing has completed.
 
